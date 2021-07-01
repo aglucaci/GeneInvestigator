@@ -1,0 +1,270 @@
+Gene ID,Gene symbol,Description,Scientific name,Common name,RefSeq Transcript accessions,RefSeq Protein accessions,SPARCLE ID,Curation Status,RefseqSelect,Default sequence
+7157,TP53,tumor protein p53,Homo sapiens,human,NM_000546.6,NP_000537.3,,curated,RefseqSelect,default-seq
+22059,Trp53,transformation related protein 53,Mus musculus,house mouse,NM_011640.3,NP_035770.2,,curated,RefseqSelect,default-seq
+24842,Tp53,tumor protein p53,Rattus norvegicus,Norway rat,NM_030989.3,NP_112251.2,,curated,,default-seq
+30590,tp53,tumor protein p53,Danio rerio,zebrafish,NM_001271820.1,NP_001258749.1,10170140,curated,,default-seq
+281542,TP53,tumor protein p53,Bos taurus,cattle,NM_174201.2,NP_776626.1,,curated,,default-seq
+396200,TP53,tumor protein p53,Gallus gallus,chicken,NM_205264.1,NP_990595.1,10170140,curated,,default-seq
+397276,TP53,tumor protein p53,Sus scrofa,pig,NM_213824.3,NP_998989.3,,curated,,default-seq
+403869,TP53,tumor protein p53,Canis lupus familiaris,dog,NM_001389218.1,NP_001376147.1,,curated,,default-seq
+431679,tp53,tumor protein p53,Xenopus tropicalis,tropical clawed frog,NM_001001903.1,NP_001001903.1,,curated,,default-seq
+443421,TP53,tumor protein p53,Ovis aries,sheep,NM_001009403.1,NP_001009403.1,,curated,,default-seq
+455214,TP53,tumor protein p53,Pan troglodytes,chimpanzee,XM_016931470.2,XP_016786959.2,,model,,default-seq
+493847,TP53,tumor protein p53,Felis catus,domestic cat,NM_001009294.1,NP_001009294.1,,curated,,default-seq
+497248,TP53,tumor protein p53,Monodelphis domestica,gray short-tailed opossum,XM_007483356.1,XP_007483418.1,10326712,model,,default-seq
+716170,TP53,tumor protein p53,Macaca mulatta,Rhesus monkey,NM_001047151.2,NP_001040616.1,,curated,,default-seq
+100009292,TP53,tumor protein p53,Oryctolagus cuniculus,rabbit,XM_008270660.2,XP_008268882.1,,model,,default-seq
+100049321,tp53,tumor protein p53,Oryzias latipes,Japanese medaka,NM_001104742.1,NP_001098212.1,11179131,curated,,default-seq
+100062044,TP53,tumor protein p53,Equus caballus,horse,NM_001202405.1,NP_001189334.1,,curated,,default-seq
+100092821,TP53,tumor protein p53,Ornithorhynchus anatinus,platypus,XM_029056307.2,XP_028912140.1,10170140,model,,default-seq
+100136737,tp53,tumor protein p53,Oncorhynchus mykiss,rainbow trout,NM_001124692.1,NP_001118164.1,,curated,,default-seq
+100304476,tp53,tumor protein p53,Ictalurus punctatus,channel catfish,NM_001200076.1,NP_001187005.1,10170140,curated,,default-seq
+100379269,Tp53,tumor protein p53,Cavia porcellus,domestic guinea pig,NM_001172740.1,NP_001166211.1,,curated,,default-seq
+100415710,TP53,tumor protein p53,Callithrix jacchus,white-tufted-ear marmoset,XM_002747948.4,XP_002747994.1,,model,,default-seq
+100435218,TP53,tumor protein p53,Pongo abelii,Sumatran orangutan,XM_002826974.4,XP_002827020.2,,model,,default-seq
+100468516,TP53,tumor protein p53,Ailuropoda melanoleuca,giant panda,XM_002924437.4,XP_002924483.1,,model,,default-seq
+100583326,TP53,tumor protein p53,Nomascus leucogenys,northern white-cheeked gibbon,XM_030800485.1,XP_030656345.1,,model,,default-seq
+100663725,TP53,tumor protein p53,Loxodonta africana,African savanna elephant,XM_003416902.3,XP_003416950.2,,model,,default-seq
+100682525,Tp53,tumor protein p53,Cricetulus griseus,Chinese hamster,NM_001243976.1,NP_001230905.1,,curated,,default-seq
+100702587,tp53,tumor protein p53,Oreochromis niloticus,Nile tilapia,XM_025905404.1,XP_025761189.1,11179131,model,,default-seq
+100922473,TP53,tumor protein p53,Sarcophilus harrisii,Tasmanian devil,XM_031965443.1,XP_031821303.1,,model,,default-seq
+100963622,TP53,tumor protein p53,Otolemur garnettii,small-eared galago,XM_012806041.2,XP_012661495.1,,model,,default-seq
+100973941,TP53,tumor protein p53,Pan paniscus,pygmy chimpanzee,XM_003810066.3,XP_003810114.2,,model,,default-seq
+101006608,TP53,tumor protein p53,Papio anubis,olive baboon,XM_003912272.5,XP_003912321.1,,model,,default-seq
+101043647,TP53,tumor protein p53,Saimiri boliviensis,Bolivian squirrel monkey,XM_039476036.1,XP_039331970.1,,model,,default-seq
+101079595,tp53,tumor protein p53,Takifugu rubripes,torafugu,XM_003966884.3,XP_003966933.1,11179131,model,,default-seq
+101133524,TP53,tumor protein p53,Gorilla gorilla,western gorilla,XM_019013136.2,XP_018868681.2,,model,,default-seq
+101285670,TP53,tumor protein p53,Orcinus orca,killer whale,XM_033422971.1,XP_033278862.1,,model,,default-seq
+101319146,TP53,tumor protein p53,Tursiops truncatus,common bottlenose dolphin,XM_033848569.1,XP_033704460.1,,model,,default-seq
+101351852,LOC101351852,tumor protein p53,Trichechus manatus latirostris,Florida manatee,XM_004376021.2,XP_004376078.1,,model,,default-seq
+101362427,TP53,tumor protein p53,Odobenus rosmarus divergens,Pacific walrus,XM_004398491.1,XP_004398548.1,,model,,default-seq
+101399576,LOC101399576,tumor protein p53,Ceratotherium simum simum,southern white rhinoceros,XM_014789552.1,XP_014645038.1,,model,,default-seq
+101416069,TP53,tumor protein p53,Dasypus novemcinctus,nine-banded armadillo,XM_012529092.2,XP_012384546.1,,model,,default-seq
+101480650,tp53,tumor protein p53,Maylandia zebra,zebra mbuna,XM_004571176.4,XP_004571233.1,11179131,model,,default-seq
+101528346,TP53,tumor protein p53,Ochotona princeps,American pika,XM_004594783.1,XP_004594840.1,,model,,default-seq
+101558045,TP53,tumor protein p53,Sorex araneus,European shrew,XM_004604858.1,XP_004604915.1,,model,,default-seq
+101589830,Tp53,tumor protein p53,Octodon degus,degu,XM_004638424.2,XP_004638481.1,,model,,default-seq
+101609339,Tp53,tumor protein p53,Jaculus jaculus,lesser Egyptian jerboa,XM_004669213.1,XP_004669270.1,,model,,default-seq
+101632504,TP53,tumor protein p53,Condylura cristata,star-nosed mole,XM_004684639.2,XP_004684696.1,,model,,default-seq
+101656530,TP53,tumor protein p53,Echinops telfairi,small Madagascar hedgehog,XM_013007322.2,XP_012862776.1,,model,,default-seq
+101677794,TP53,tumor protein p53,Mustela putorius furo,domestic ferret,XM_004760256.2,XP_004760313.2,,model,,default-seq
+101701769,Tp53,tumor protein p53,Heterocephalus glaber,naked mole-rat,NM_001310270.1,NP_001297199.1,,curated,,default-seq
+101833915,Tp53,tumor protein p53,Mesocricetus auratus,golden hamster,NM_001281661.1,NP_001268590.1,,curated,,default-seq
+101942845,TP53,tumor protein p53,Chrysemys picta,Painted turtle,XM_005279339.2,XP_005279396.2,,model,,default-seq
+101957738,Tp53,tumor protein p53,Ictidomys tridecemlineatus,thirteen-lined ground squirrel,XM_005332819.4,XP_005332876.1,,model,,default-seq
+101978980,Tp53,tumor protein p53,Microtus ochrogaster,prairie vole,XM_005349777.1,XP_005349834.1,,model,,default-seq
+102005455,Tp53,tumor protein p53,Chinchilla lanigera,long-tailed chinchilla,XM_005399463.2,XP_005399520.1,,model,,default-seq
+102101491,TP53,tumor protein p53,Pseudopodoces humilis,Tibetan ground-tit,XM_014261886.1,XP_014117361.1,10170125,model,,default-seq
+102135998,TP53,tumor protein p53,Macaca fascicularis,crab-eating macaque,NM_001287679.1,NP_001274608.1,,curated,,default-seq
+102169621,TP53,tumor protein p53,Capra hircus,goat,XM_005693530.3,XP_005693587.1,,model,,default-seq
+102203120,tp53,tumor protein p53,Pundamilia nyererei,,XM_005749774.1,XP_005749831.1,10326712,model,,default-seq
+102219062,tp53,tumor protein p53,Xiphophorus maculatus,southern platyfish,NM_001286289.1,NP_001273218.1,11179131,curated,,default-seq
+102244768,TP53,tumor protein p53,Myotis brandtii,Brandt's bat,XM_014549841.1,XP_014405327.1,,model,,default-seq
+102272370,TP53,tumor protein p53,Bos mutus,wild yak,XM_005894802.2,XP_005894864.1,,model,,default-seq
+102296334,tp53,tumor protein p53,Haplochromis burtoni,Burton's mouthbrooder,XM_005939677.2,XP_005939739.1,11179131,model,,default-seq
+102376594,TP53,tumor protein p53,Alligator sinensis,Chinese alligator,XM_025195179.1,XP_025050964.1,10170140,model,,default-seq
+102402069,TP53,tumor protein p53,Bubalus bubalis,water buffalo,NM_001290844.2,NP_001277773.2,,curated,,default-seq
+102431418,TP53,tumor protein p53,Myotis lucifugus,little brown bat,XM_023743933.1,XP_023599701.1,,model,,default-seq
+102448135,TP53,tumor protein p53,Pelodiscus sinensis,Chinese soft-shelled turtle,XM_006112136.3,XP_006112198.1,,model,,default-seq
+102503238,TP53,tumor protein p53,Tupaia chinensis,Chinese tree shrew,NM_001287369.1,NP_001274298.1,,curated,,default-seq
+102524476,TP53,tumor protein p53,Camelus ferus,Wild Bactrian camel,XM_006175816.3,XP_006175878.1,,model,,default-seq
+102530959,TP53,tumor protein p53,Vicugna pacos,alpaca,XM_006218777.3,XP_006218839.1,,model,,default-seq
+102570618,TP53,tumor protein p53,Alligator mississippiensis,American alligator,XM_006261004.3,XP_006261066.1,10170140,model,,default-seq
+102690789,tp53,tumor protein p53,Lepisosteus oculatus,spotted gar,XM_015340733.1,XP_015196219.1,,model,,default-seq
+102726420,TP53,tumor protein p53,Leptonychotes weddellii,Weddell seal,XM_006738887.2,XP_006738950.1,,model,,default-seq
+102759012,TP53,tumor protein p53,Myotis davidii,,XM_015562573.1,XP_015418059.1,,model,,default-seq
+102776078,tp53,tumor protein p53,Neolamprologus brichardi,,XM_006807693.2,XP_006807756.1,11179131,model,,default-seq
+102835323,TP53,tumor protein p53,Chrysochloris asiatica,Cape golden mole,XM_006863387.1,XP_006863449.1,,model,,default-seq
+102863330,TP53,tumor protein p53,Elephantulus edwardii,Cape elephant shrew,XM_006899135.1,XP_006899197.1,,model,,default-seq
+102889604,TP53,tumor protein p53,Pteropus alecto,black flying fox,XM_006922335.3,XP_006922397.1,,model,,default-seq
+102922013,Tp53,tumor protein p53,Peromyscus maniculatus bairdii,prairie deer mouse,XM_015992323.1,XP_015847809.1,,model,,default-seq
+102934531,TP53,tumor protein p53,Chelonia mydas,Green sea turtle,XM_037887251.1,XP_037743179.1,,model,,default-seq
+102962571,TP53,tumor protein p53,Panthera tigris altaica,Amur tiger,XM_015541817.1,XP_015397303.1,10326712,model,,default-seq
+102985658,TP53,tumor protein p53,Physeter catodon,sperm whale,XM_028499408.1,XP_028355209.1,,model,,default-seq
+103003426,TP53,tumor protein p53,Balaenoptera acutorostrata scammoni,,XM_007166385.1,XP_007166447.1,,model,,default-seq
+103061365,TP53,tumor protein p53,Python bivittatus,Burmese python,XM_007433283.3,XP_007433345.1,,model,,default-seq
+103089875,TP53,tumor protein p53,Lipotes vexillifer,Yangtze River dolphin,XM_007457790.1,XP_007457852.1,,model,,default-seq
+103113788,TP53,tumor protein p53,Erinaceus europaeus,western European hedgehog,XM_007523372.2,XP_007523434.2,,model,,default-seq
+103137501,tp53,tumor protein p53,Poecilia formosa,Amazon molly,XM_007551255.2,XP_007551317.1,11179131,model,,default-seq
+103206754,TP53,tumor protein p53,Orycteropus afer afer,,XM_007952255.1,XP_007950446.1,,model,,default-seq
+103242323,TP53,tumor protein p53,Chlorocebus sabaeus,green monkey,XM_008010192.2,XP_008008383.2,,model,,default-seq
+103264637,TP53,tumor protein p53,Carlito syrichta,Philippine tarsier,XM_008062341.2,XP_008060532.1,,model,,default-seq
+103296897,TP53,tumor protein p53,Eptesicus fuscus,big brown bat,XM_028128360.1,XP_027984161.1,,model,,default-seq
+103358022,tp53,tumor protein p53,Stegastes partitus,bicolor damselfish,XM_008282818.1,XP_008281040.1,11179131,model,,default-seq
+103387239,tp53,tumor protein p53,Cynoglossus semilaevis,tongue sole,XM_008321788.3,XP_008320010.1,11109581,model,,default-seq
+103480460,tp53,tumor protein p53,Poecilia reticulata,guppy,XM_008435411.2,XP_008433633.1,11179131,model,,default-seq
+103557703,TP53,tumor protein p53,Equus przewalskii,Przewalski's horse,XM_008530347.1,XP_008528569.1,,model,,default-seq
+103591400,TP53,tumor protein p53,Galeopterus variegatus,Sunda flying lemur,XM_008573838.1,XP_008572060.1,,model,,default-seq
+103660368,TP53,tumor protein p53,Ursus maritimus,polar bear,XM_008687972.2,XP_008686194.1,,model,,default-seq
+103752115,Tp53,tumor protein p53,Nannospalax galili,Upper Galilee mountains blind mole rat,NM_001319288.1,NP_001306217.1,,curated,,default-seq
+104661662,TP53,tumor protein p53,Rhinopithecus roxellana,golden snub-nosed monkey,XM_010362387.1,XP_010360689.1,,model,,default-seq
+104834080,TP53,tumor protein p53,Haliaeetus leucocephalus,bald eagle,XM_010571169.1,XP_010569471.1,10170125,model,,default-seq
+104855853,Tp53,tumor protein p53,Fukomys damarensis,Damara mole-rat,XM_010614891.3,XP_010613193.1,,model,,default-seq
+104923960,tp53,tumor protein p53,Larimichthys crocea,large yellow croaker,XM_010737168.3,XP_010735470.2,11179131,model,,default-seq
+104990761,TP53,tumor protein p53,Bison bison bison,,XM_010843072.1,XP_010841374.1,,model,,default-seq
+105008589,tp53,tumor protein p53,Esox lucius,northern pike,XM_010867924.5,XP_010866226.1,,model,,default-seq
+105077515,TP53,tumor protein p53,Camelus bactrianus,Bactrian camel,XM_010965924.1,XP_010964226.1,,model,,default-seq
+105103011,TP53,tumor protein p53,Camelus dromedarius,Arabian camel,XM_010996514.2,XP_010994816.1,,model,,default-seq
+105291226,TP53,tumor protein p53,Pteropus vampyrus,large flying fox,XM_011358864.2,XP_011357166.1,,model,,default-seq
+105473688,TP53,tumor protein p53,Macaca nemestrina,pig-tailed macaque,XM_011727613.2,XP_011725915.1,,model,,default-seq
+105523626,TP53,tumor protein p53,Colobus angolensis palliatus,,XM_011958558.1,XP_011813948.1,,model,,default-seq
+105549866,TP53,tumor protein p53,Mandrillus leucophaeus,drill,XM_011994540.1,XP_011849930.1,,model,,default-seq
+105582225,TP53,tumor protein p53,Cercocebus atys,sooty mangabey,XM_012052423.1,XP_011907813.1,,model,,default-seq
+105720742,TP53,tumor protein p53,Aotus nancymaae,Ma's night monkey,XM_021674704.1,XP_021530379.1,,model,,default-seq
+105819395,TP53,tumor protein p53,Propithecus coquereli,Coquerel's sifaka,XM_012655616.1,XP_012511070.1,,model,,default-seq
+105877486,TP53,tumor protein p53,Microcebus murinus,gray mouse lemur,XM_012776058.2,XP_012631512.1,,model,,default-seq
+105934647,tp53,tumor protein p53,Fundulus heteroclitus,mummichog,XM_012874736.2,XP_012730190.2,,model,,default-seq
+105983546,Tp53,tumor protein p53,Dipodomys ordii,Ord's kangaroo rat,XM_013013490.1,XP_012868944.1,,model,,default-seq
+106525321,tp53,tumor protein p53,Austrofundulus limnaeus,,XM_014019513.1,XP_013874967.1,11109581,model,,default-seq
+106602901,tp53,tumor protein p53,Salmo salar,Atlantic salmon,XM_014195885.1,XP_014051360.1,,model,,default-seq
+106844218,TP53,tumor protein p53,Equus asinus,ass,XM_014861557.1,XP_014717043.1,,model,,default-seq
+106863822,TP53,tumor protein p53,Sturnus vulgaris,Common starling,XM_014893382.1,XP_014748868.1,10170125,model,,default-seq
+106919132,tp53,tumor protein p53,Poecilia mexicana,,XM_014989315.1,XP_014844801.1,11179131,model,,default-seq
+106945775,tp53,tumor protein p53,Poecilia latipinna,sailfin molly,XM_015029694.1,XP_014885180.1,11179131,model,,default-seq
+106972437,TP53,tumor protein p53,Acinonyx jubatus,cheetah,XM_027047532.1,XP_026903333.1,,model,,default-seq
+107087774,tp53,tumor protein p53,Cyprinodon variegatus,sheepshead minnow,XM_015379515.1,XP_015235001.1,10170130,model,,default-seq
+107121079,TP53,tumor protein p53,Gekko japonicus,,XM_015423926.1,XP_015279412.1,10170140,model,,default-seq
+107158007,Tp53,tumor protein p53,Marmota marmota marmota,Alpine marmot,XM_015504433.1,XP_015359919.1,,model,,default-seq
+107377392,tp53,tumor protein p53,Nothobranchius furzeri,turquoise killifish,NM_001323800.1,NP_001310729.1,11109577,curated,,default-seq
+107515689,TP53,tumor protein p53,Rousettus aegyptiacus,Egyptian rousette,XM_016154772.2,XP_016010258.1,,model,,default-seq
+107544572,TP53,tumor protein p53,Miniopterus natalensis,,XM_016222486.1,XP_016077972.1,,model,,default-seq
+107599945,tp53,tumor protein p53,Sinocyclocheilus grahami,,XM_016291694.1,XP_016147180.1,10170140,model,,default-seq
+108228351,tp53,tumor protein p53,Kryptolebias marmoratus,mangrove rivulus,XM_017403894.3,XP_017259383.1,11179131,model,,default-seq
+108306559,TP53,tumor protein p53,Cebus imitator,Panamanian white-faced capuchin,XM_017531594.2,XP_017387083.1,,model,,default-seq
+108404266,TP53,tumor protein p53,Manis javanica,Malayan pangolin,XM_017671764.2,XP_017527253.1,,model,,default-seq
+108514363,TP53,tumor protein p53,Rhinopithecus bieti,black snub-nosed monkey,XM_017850544.1,XP_017706033.1,,model,,default-seq
+108804194,TP53,tumor protein p53,Nanorana parkeri,,XM_018575949.1,XP_018431451.1,10170125,model,,default-seq
+108879980,tp53,tumor protein p53,Lates calcarifer,barramundi perch,XM_018671426.1,XP_018526942.1,11179131,model,,default-seq
+108921730,tp53,tumor protein p53,Scleropages formosus,Asian bonytongue,XM_018731382.2,XP_018586898.1,,model,,default-seq
+109082764,tp53,tumor protein p53,Cyprinus carpio,common carp,XM_019097598.1,XP_018953143.1,10170140,model,,default-seq
+109245932,TP53,tumor protein p53,Panthera pardus,leopard,XM_019413568.1,XP_019269113.1,,model,,default-seq
+109394672,TP53,tumor protein p53,Hipposideros armiger,great roundleaf bat,XM_019664961.1,XP_019520506.1,,model,,default-seq
+109574238,TP53,tumor protein p53,Bos indicus,zebu cattle,XM_019982111.1,XP_019837670.1,,model,,default-seq
+109634900,tp53,tumor protein p53,Paralichthys olivaceus,Japanese flounder,XM_020095710.1,XP_019951269.1,11109581,model,,default-seq
+109674834,Tp53,tumor protein p53,Castor canadensis,American beaver,XM_020151705.1,XP_020007294.1,,model,,default-seq
+109873031,tp53,tumor protein p53,Oncorhynchus kisutch,coho salmon,XM_031807550.1,XP_031663410.1,,model,,default-seq
+109951400,tp53,tumor protein p53,Monopterus albus,swamp eel,XM_020585891.1,XP_020441547.1,11179131,model,,default-seq
+109980675,tp53,tumor protein p53,Labrus bergylta,ballan wrasse,XM_020629140.2,XP_020484796.1,11179131,model,,default-seq
+110087754,TP53,tumor protein p53,Pogona vitticeps,central bearded dragon,XM_020809612.1,XP_020665271.1,,model,,default-seq
+110121763,TP53,tumor protein p53,Odocoileus virginianus texanus,,XM_020869027.1,XP_020724686.1,,model,,default-seq
+110159471,tp53,tumor protein p53,Boleophthalmus pectinirostris,great blue-spotted mudskipper,XM_020924030.1,XP_020779689.1,11109581,model,,default-seq
+110194271,TP53,tumor protein p53,Phascolarctos cinereus,koala,XM_020966467.1,XP_020822126.1,,model,,default-seq
+110305297,Tp53,tumor protein p53,Mus caroli,Ryukyu mouse,XM_021177210.2,XP_021032869.1,,model,,default-seq
+110331731,Tp53,tumor protein p53,Mus pahari,shrew mouse,XM_021212574.2,XP_021068233.2,,model,,default-seq
+110480316,TP53,tumor protein p53,Lonchura striata domestica,Bengalese finch,XM_031507637.1,XP_031363497.1,,model,,default-seq
+110555127,Tp53,tumor protein p53,Meriones unguiculatus,Mongolian gerbil,XM_021648173.1,XP_021503848.1,,model,,default-seq
+110584444,TP53,tumor protein p53,Neomonachus schauinslandi,Hawaiian monk seal,XM_021694492.1,XP_021550167.1,,model,,default-seq
+110962689,tp53,tumor protein p53,Acanthochromis polyacanthus,spiny chromis,XM_022210691.1,XP_022066383.1,11179131,model,,default-seq
+111161133,LOC111161133,tumor protein p53,Enhydra lutris kenyoni,,XM_022524640.1,XP_022380348.1,,model,,default-seq
+111185755,TP53,tumor protein p53,Delphinapterus leucas,beluga whale,XM_022595620.2,XP_022451328.1,,model,,default-seq
+111233015,tp53,tumor protein p53,Seriola dumerili,greater amberjack,XM_022760740.1,XP_022616461.1,11179131,model,,default-seq
+111527100,TP53,tumor protein p53,Piliocolobus tephrosceles,Ugandan red Colobus,XM_023193314.2,XP_023049082.1,,model,,default-seq
+111577187,tp53,tumor protein p53,Amphiprion ocellaris,clown anemonefish,XM_023283324.2,XP_023139092.1,11179131,model,,default-seq
+111650698,tp53,tumor protein p53,Seriola lalandi dorsalis,,XM_023400622.1,XP_023256390.1,11179131,model,,default-seq
+111850623,tp53,tumor protein p53,Paramormyrops kingsleyae,,XM_023824696.1,XP_023680464.1,10170140,model,,default-seq
+111950504,tp53,tumor protein p53,Salvelinus alpinus,Arctic char,XM_023968124.1,XP_023823892.1,,model,,default-seq
+112119817,TP53,tumor protein p53,Terrapene carolina triunguis,Three-toed box turtle,XM_024218614.3,XP_024074382.1,,model,,default-seq
+112156259,tp53,tumor protein p53,Oryzias melastigma,Indian medaka,XM_036216717.1,XP_036072610.1,,model,,default-seq
+112229014,tp53,tumor protein p53,Oncorhynchus tshawytscha,Chinook salmon,XM_024394883.1,XP_024250651.1,,model,,default-seq
+112308825,TP53,tumor protein p53,Desmodus rotundus,common vampire bat,XM_024565104.1,XP_024420872.1,,model,,default-seq
+112401891,TP53,tumor protein p53,Neophocaena asiaeorientalis asiaeorientalis,Yangtze finless porpoise,XM_024748420.1,XP_024604188.1,,model,,default-seq
+112610199,TP53,tumor protein p53,Theropithecus gelada,gelada,XM_025363515.1,XP_025219300.1,,model,,default-seq
+112647438,TP53,tumor protein p53,Canis lupus dingo,dingo,XM_025428522.2,XP_025284307.1,,model,,default-seq
+112817082,TP53,tumor protein p53,Callorhinus ursinus,northern fur seal,XM_025864014.1,XP_025719799.1,,model,,default-seq
+112856999,TP53,tumor protein p53,Puma concolor,puma,XM_025920288.1,XP_025776073.1,,model,,default-seq
+112924853,TP53,tumor protein p53,Vulpes vulpes,red fox,XM_026005407.1,XP_025861192.1,,model,,default-seq
+113018712,tp53,tumor protein p53,Astatotilapia calliptera,eastern happy,XM_026162037.1,XP_026017822.1,11179131,model,,default-seq
+113048774,tp53,tumor protein p53,Carassius auratus,goldfish,XM_026210612.1,XP_026066397.1,10170140,model,,default-seq
+113125452,tp53,tumor protein p53,Mastacembelus armatus,zig-zag eel,XM_026298920.1,XP_026154705.1,11179131,model,,default-seq
+113157642,tp53,tumor protein p53,Anabas testudineus,climbing perch,XM_026353231.1,XP_026209016.1,11179131,model,,default-seq
+113183981,Tp53,tumor protein p53,Urocitellus parryii,Arctic ground squirrel,XM_026390537.1,XP_026246322.1,,model,,default-seq
+113271152,TP53,tumor protein p53,Ursus arctos horribilis,,XM_026520889.1,XP_026376674.1,,model,,default-seq
+113451334,TP53,tumor protein p53,Pseudonaja textilis,,XM_026722699.1,XP_026578484.1,10170130,model,,default-seq
+113570174,tp53,tumor protein p53,Electrophorus electricus,electric eel,XM_026998413.2,XP_026854214.2,,model,,default-seq
+113633022,TP53,tumor protein p53,Lagenorhynchus obliquidens,Pacific white-sided dolphin,XM_027130927.1,XP_026986728.1,,model,,default-seq
+113663944,tp53,tumor protein p53,Tachysurus fulvidraco,yellow catfish,XM_027179434.1,XP_027035235.1,10170140,model,,default-seq
+113878373,TP53,tumor protein p53,Bos indicus x Bos taurus,hybrid cattle,XM_027519387.1,XP_027375188.1,,model,,default-seq
+113939587,TP53,tumor protein p53,Zalophus californianus,California sea lion,XM_027625914.2,XP_027481715.1,,model,,default-seq
+114039336,TP53,tumor protein p53,Vombatus ursinus,common wombat,XM_027857038.1,XP_027712839.1,,model,,default-seq
+114101690,Tp53,tumor protein p53,Marmota flaviventris,yellow-bellied marmot,XM_027946781.2,XP_027802582.1,,model,,default-seq
+114157824,tp53,tumor protein p53,Xiphophorus couchianus,Monterrey platyfish,XM_028038987.1,XP_027894788.1,11179131,model,,default-seq
+114225325,TP53,tumor protein p53,Eumetopias jubatus,Steller sea lion,XM_028124935.1,XP_027980736.1,,model,,default-seq
+114450790,tp53,tumor protein p53,Parambassis ranga,Indian glassy fish,XM_028429176.1,XP_028284977.1,11109581,model,,default-seq
+114480502,tp53,tumor protein p53,Gouania willdenowi,blunt-snouted clingfish,XM_028474708.1,XP_028330509.1,11179131,model,,default-seq
+114515376,TP53,tumor protein p53,Phyllostomus discolor,pale spear-nosed bat,XM_028534686.2,XP_028390487.1,,model,,default-seq
+114545465,tp53,tumor protein p53,Perca flavescens,yellow perch,XM_028563732.1,XP_028419533.1,11179131,model,,default-seq
+114608083,TP53,tumor protein p53,Podarcis muralis,Common wall lizard,XM_028752002.1,XP_028607835.1,,model,,default-seq
+114631686,Tp53,tumor protein p53,Grammomys surdaster,,XM_028780049.1,XP_028635882.1,,model,,default-seq
+114648997,tp53,tumor protein p53,Erpetoichthys calabaricus,reedfish,XM_028798385.1,XP_028654218.1,,model,,default-seq
+114693171,Tp53,tumor protein p53,Peromyscus leucopus,white-footed mouse,XM_028869449.2,XP_028725282.1,,model,,default-seq
+114792607,tp53,tumor protein p53,Denticeps clupeoides,denticle herring,XM_028983911.1,XP_028839744.1,10170140,model,,default-seq
+114850503,tp53,tumor protein p53,Betta splendens,Siamese fighting fish,XM_029142326.2,XP_028998159.1,11109581,model,,default-seq
+114889285,TP53,tumor protein p53,Monodon monoceros,narwhal,XM_029212409.1,XP_029068242.1,,model,,default-seq
+115023713,tp53,tumor protein p53,Cottoperca gobio,,XM_029454926.1,XP_029310786.1,,model,,default-seq
+115058519,tp53,tumor protein p53,Echeneis naucrates,live sharksucker,XM_029525864.1,XP_029381724.1,,model,,default-seq
+115078199,TP53,tumor protein p53,Rhinatrema bivittatum,two-lined caecilian,XM_029580948.1,XP_029436808.1,,model,,default-seq
+115135425,tp53,tumor protein p53,Oncorhynchus nerka,sockeye salmon,XM_029670106.1,XP_029525966.1,,model,,default-seq
+115154926,tp53,tumor protein p53,Salmo trutta,river trout,XM_029701643.1,XP_029557503.1,,model,,default-seq
+115281719,TP53,tumor protein p53,Suricata suricatta,meerkat,XM_029927154.1,XP_029783014.1,,model,,default-seq
+115338264,TP53,tumor protein p53,Aquila chrysaetos chrysaetos,,XM_030006774.1,XP_029862634.1,,model,,default-seq
+115376784,tp53,tumor protein p53,Myripristis murdjan,pinecone soldierfish,XM_030076548.1,XP_029932408.1,,model,,default-seq
+115385401,tp53,tumor protein p53,Salarias fasciatus,jewelled blenny,XM_030087391.1,XP_029943251.1,,model,,default-seq
+115438783,tp53,tumor protein p53,Sphaeramia orbicularis,orbiculate cardinalfish,XM_030162620.1,XP_030018480.1,,model,,default-seq
+115457986,TP53,tumor protein p53,Microcaecilia unicolor,,XM_030187726.1,XP_030043586.1,,model,,default-seq
+115500807,TP53,tumor protein p53,Lynx canadensis,Canada lynx,XM_030295516.1,XP_030151376.1,,model,,default-seq
+115529448,tp53,tumor protein p53,Gadus morhua,Atlantic cod,XM_030338190.1,XP_030194050.1,,model,,default-seq
+115590323,tp53,tumor protein p53,Sparus aurata,gilthead seabream,XM_030431663.1,XP_030287523.1,,model,,default-seq
+115602932,TP53,tumor protein p53,Strigops habroptila,Kakapo,XM_030474375.1,XP_030330235.1,,model,,default-seq
+115644052,TP53,tumor protein p53,Gopherus evgoodei,Goodes thornscrub tortoise,XM_030548110.1,XP_030403970.1,,model,,default-seq
+115796797,tp53,tumor protein p53,Archocentrus centrarchus,flier cichlid,XM_030753229.1,XP_030609089.1,,model,,default-seq
+115828178,tp53,tumor protein p53,Chanos chanos,milkfish,XM_030792125.1,XP_030647985.1,,model,,default-seq
+115855875,TP53,tumor protein p53,Globicephala melas,long-finned pilot whale,XM_030861565.1,XP_030717425.1,,model,,default-seq
+115916353,TP53,tumor protein p53,Camarhynchus parvulus,,XM_030970056.1,XP_030825916.1,,model,,default-seq
+116049038,tp53,tumor protein p53,Sander lucioperca,pikeperch,XM_031298412.2,XP_031154272.2,,model,,default-seq
+116077116,Tp53,tumor protein p53,Mastomys coucha,southern multimammate mouse,XM_031351448.1,XP_031207308.1,,model,,default-seq
+116310388,tp53,tumor protein p53,Oreochromis aureus,,XM_031727155.2,XP_031583015.1,,model,,default-seq
+116459052,TP53,tumor protein p53,Hylobates moloch,silvery gibbon,XM_032139337.2,XP_031995228.1,,model,,default-seq
+116553190,TP53,tumor protein p53,Sapajus apella,tufted capuchin,XM_032280430.1,XP_032136321.1,,model,,default-seq
+116578338,TP53,tumor protein p53,Mustela erminea,ermine,XM_032322544.1,XP_032178435.1,,model,,default-seq
+116649291,TP53,tumor protein p53,Phoca vitulina,harbor seal,XM_032431962.1,XP_032287853.1,,model,,default-seq
+116686339,tp53,tumor protein p53,Etheostoma spectabile,orangethroat darter,XM_032511329.1,XP_032367220.1,,model,,default-seq
+116732253,tp53,tumor protein p53,Xiphophorus hellerii,green swordtail,XM_032582297.1,XP_032438188.1,,model,,default-seq
+116745739,TP53,tumor protein p53,Phocoena sinus,vaquita,XM_032616755.1,XP_032472646.1,,model,,default-seq
+116833193,TP53,tumor protein p53,Chelonoidis abingdonii,Abingdon island giant tortoise,XM_032794536.1,XP_032650427.1,,model,,default-seq
+116856570,TP53,tumor protein p53,Lontra canadensis,Northern American river otter,XM_032840028.1,XP_032695919.1,,model,,default-seq
+116908890,Tp53,tumor protein p53,Rattus rattus,black rat,XM_032912336.1,XP_032768227.1,,model,,default-seq
+117009902,TP53,tumor protein p53,Catharus ustulatus,Swainson's thrush,XM_033084255.1,XP_032940146.1,,model,,default-seq
+117013763,TP53,tumor protein p53,Rhinolophus ferrumequinum,greater horseshoe bat,XM_033091194.1,XP_032947085.1,,model,,default-seq
+117067758,TP53,tumor protein p53,Trachypithecus francoisi,Francois's langur,XM_033184717.1,XP_033040608.1,,model,,default-seq
+117350793,TP53,tumor protein p53,Geotrypetes seraphini,,XM_033925416.1,XP_033781307.1,,model,,default-seq
+117438105,LOC117438105,tumor protein p53,Melopsittacus undulatus,budgerigar,XM_034073521.1,XP_033929412.1,,model,,default-seq
+117710574,Tp53,tumor protein p53,Arvicanthis niloticus,African grass rat,XM_034505539.1,XP_034361430.1,,model,,default-seq
+118000034,TP53,tumor protein p53,Mirounga leonina,Southern elephant seal,XM_034989514.1,XP_034845405.1,,model,,default-seq
+118094938,TP53,tumor protein p53,Zootoca vivipara,common lizard,XM_035135727.1,XP_034991618.1,,model,,default-seq
+118526306,TP53,tumor protein p53,Halichoerus grypus,gray seal,XM_036077514.1,XP_035933407.1,,model,,default-seq
+118589738,Tp53,tumor protein p53,Onychomys torridus,southern grasshopper mouse,XM_036197270.1,XP_036053163.1,,model,,default-seq
+118634552,TP53,tumor protein p53,Molossus molossus,Pallas's mastiff bat,XM_036269156.1,XP_036125049.1,,model,,default-seq
+118672084,TP53,tumor protein p53,Myotis myotis,,XM_036341447.1,XP_036197340.1,,model,,default-seq
+118726809,TP53,tumor protein p53,Pipistrellus kuhlii,Kuhl's pipistrelle,XM_036451999.1,XP_036307892.1,,model,,default-seq
+118856593,TP53,tumor protein p53,Trichosurus vulpecula,common brushtail,XM_036766977.1,XP_036622872.1,,model,,default-seq
+118886638,TP53,tumor protein p53,Balaenoptera musculus,Blue whale,XM_036836670.1,XP_036692565.1,,model,,default-seq
+118917744,TP53,tumor protein p53,Manis pentadactyla,Chinese pangolin,XM_036895866.1,XP_036751761.1,,model,,default-seq
+118974748,TP53,tumor protein p53,Sturnira hondurensis,,XM_037028382.1,XP_036884277.1,,model,,default-seq
+119053542,TP53,tumor protein p53,Artibeus jamaicensis,Jamaican fruit-eating bat,XM_037151170.1,XP_037007065.1,,model,,default-seq
+119230677,TP53,tumor protein p53,Talpa occidentalis,Iberian mole,XM_037492036.1,XP_037347933.1,,model,,default-seq
+119514044,TP53,tumor protein p53,Choloepus didactylus,southern two-toed sloth,XM_037809580.1,XP_037665508.1,,model,,default-seq
+119714806,TP53,tumor protein p53,Anas platyrhynchos,mallard,XM_038171817.1,XP_038027745.1,,model,,default-seq
+119813419,Tp53,tumor protein p53,Arvicola amphibius,Eurasian water vole,XM_038328731.1,XP_038184659.1,,model,,default-seq
+119849273,TP53,tumor protein p53,Dermochelys coriacea,leatherback sea turtle,XM_038386130.1,XP_038242058.1,,model,,default-seq
+119946776,TP53,tumor protein p53,Tachyglossus aculeatus,Australian echidna,XM_038768227.1,XP_038624155.1,,model,,default-seq
+120231386,TP53,tumor protein p53,Hyaena hyaena,striped hyena,XM_039231497.1,XP_039087428.1,,model,,default-seq
+120305710,TP53,tumor protein p53,Crotalus tigris,Tiger rattlesnake,XM_039337929.1,XP_039193863.1,,model,,default-seq
+120381866,TP53,tumor protein p53,Mauremys reevesii,Reeves's turtle,XM_039500024.1,XP_039355958.1,,model,,default-seq
+120589680,TP53,tumor protein p53,Pteropus giganteus,Indian flying fox,XM_039847238.1,XP_039703172.1,,model,,default-seq
+120866037,TP53,tumor protein p53,Oryx dammah,scimitar-horned oryx,XM_040243464.1,XP_040099398.1,,model,,default-seq
+120933851,TP53,tumor protein p53,Rana temporaria,common frog,XM_040347265.1,XP_040203199.1,,model,,default-seq
+121015982,TP53,tumor protein p53,Puma yagouaroundi,jaguarundi,XM_040453335.1,XP_040309269.1,,model,,default-seq
+121169772,TP53,tumor protein p53,Ochotona curzoniae,black-lipped pika,XM_041000460.1,XP_040856394.1,,model,,default-seq
+121456449,Tp53,tumor protein p53,Microtus oregoni,creeping vole,XM_041664596.1,XP_041520530.1,,model,,default-seq
+121468489,TP53,tumor protein p53,Taeniopygia guttata,zebra finch,XM_041712170.1,XP_041568104.1,,model,,default-seq
+121499929,TP53,tumor protein p53,Vulpes lagopus,Arctic fox,XM_041771191.1,XP_041627125.1,,model,,default-seq
