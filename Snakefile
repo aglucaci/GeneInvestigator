@@ -53,7 +53,7 @@ rule all:
         os.path.join("results", Label + "_codons.fasta.BGM.json"),
         os.path.join("results", Label + "_codons.fasta.PRIME.json"),
         os.path.join("results", Label + "_codons.fasta.ABSREL-MH.json")
-
+#end rule all
 
 #----------------------------------------------------------------------------
 # Rules
@@ -75,8 +75,9 @@ rule pre_msa:
     output: 
         protein_fas = os.path.join("results", Label + "_protein.fas"),
         nucleotide_fas = os.path.join("results", Label + "_nuc.fas")
+    conda: 'environment.yaml'
     shell: 
-        "{HYPHY} {PREMSA} --input {input.codons}"
+        "hyphy {PREMSA} --input {input.codons}"
 #end rule pre_msa
 
 rule mafft:
@@ -84,8 +85,9 @@ rule mafft:
         protein = rules.pre_msa.output.protein_fas
     output:
         protein_aln = os.path.join("results", Label + "_protein.aln")
+    conda: 'environment.yaml'
     shell:
-        "{MAFFT} --auto {input.protein} > {output.protein_aln}"
+        "mafft --auto {input.protein} > {output.protein_aln}"
 #end rule mafft
 
 rule post_msa:
@@ -95,8 +97,9 @@ rule post_msa:
     output: 
         codons_fas = os.path.join("results", Label + "_codons.fasta"),
         duplicates_json = os.path.join("results", Label + "_codons_duplicates.json")
+    conda: 'environment.yaml'
     shell: 
-        "{HYPHY} {POSTMSA} --protein-msa {input.protein_aln} --nucleotide-sequences {input.nucleotide_seqs} --output {output.codons_fas} --duplicates {output.duplicates_json}"
+        "hyphy {POSTMSA} --protein-msa {input.protein_aln} --nucleotide-sequences {input.nucleotide_seqs} --output {output.codons_fas} --duplicates {output.duplicates_json}"
 #end rule pre_msa
 
 #----------------------------------------------------------------------------
@@ -112,8 +115,9 @@ rule iqtree:
         codons_fas = rules.post_msa.output.codons_fas
     output:
         tree = os.path.join("results", Label + "_codons.fasta.treefile")
+    conda: 'environment.yaml'
     shell:
-        "{IQTREE} -s {input.codons_fas}"
+        "iqtree -s {input.codons_fas}"
 #end rule iqtree
 
 #----------------------------------------------------------------------------

@@ -1,13 +1,10 @@
 Nucleotide: data/TP53_refseq_transcript.fasta
 Protein: data/TP53_refseq_protein.fasta
 Label: "TP53"
-
 HyPhy: /usr/local/bin/hyphy
-pre-msa: /mnt/d/hyphy-analyses/codon-msa/pre-msa.bf
+pre-msa: /home/aglucaci//hyphy-analyses/codon-msa/pre-msa.bf
 MAFFT: /usr/bin/mafft
-post-msa: /mnt/d/hyphy-analyses/codon-msa/post-msa.bf
-
-FMM: /mnt/d/hyphy-analyses/FitMultiModel/FitMultiModel.bf
-BUSTEDSMH: /mnt/d/hyphy-analyses/BUSTED-MH/BUSTED-MH.bf
-
+post-msa: /home/aglucaci//hyphy-analyses/codon-msa/post-msa.bf
+FMM: /home/aglucaci/hyphy-analyses/FitMultiModel/FitMultiModel.bf
+BUSTEDSMH: /home/aglucaci/hyphy-analyses/BUSTED-MH/BUSTED-MH.bf
 IQTREE: /usr/bin/iqtree

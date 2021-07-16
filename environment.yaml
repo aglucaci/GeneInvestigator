@@ -1,0 +1,11 @@
+name: GeneInvestigator
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - hyphy=2.5.31 
+  - iqtree 
+  - snakemake=5.3
+  - stephenshank::tn93=1.0.7
