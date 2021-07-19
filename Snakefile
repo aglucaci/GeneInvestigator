@@ -18,11 +18,11 @@ configfile: 'config.yaml'
 Nucleotide_file = config["Nucleotide"]
 Protein_file = config["Protein"]
 Label = config["Label"]
-HYPHY = config["HyPhy"]
+#HYPHY = config["HyPhy"]
 PREMSA = config["pre-msa"]
-MAFFT = config["MAFFT"]
+#MAFFT = config["MAFFT"]
 POSTMSA = config["post-msa"]
-IQTREE = config["IQTREE"]
+#IQTREE = config["IQTREE"]
 FMM = config["FMM"]
 BUSTEDS_MH = config["BUSTEDSMH"]
 MSS = config["MSS"]
@@ -64,7 +64,8 @@ rule all:
         os.path.join(OUTDIR, Label + "_codons.fasta.ABSREL-MH.json"),
         os.path.join(OUTDIR, Label + "_codons.fasta.BUSTEDS-MH.json"),
         os.path.join(OUTDIR, Label + "_codons.fasta.MSS.json"),
-        os.path.join(OUTDIR, Label + "_codons.fasta.BUSTED-MSS.json")
+        os.path.join(OUTDIR, Label + "_codons.fasta.BUSTED-MSS.json"),
+        os.path.join(OUTDIR, Label + "_codons.fasta.FMM.json")
 #end rule all
 
 #----------------------------------------------------------------------------
@@ -277,6 +278,16 @@ rule BUSTEDMSS:
         "hyphy {BUSTEDMSS} --alignment {input.codon_aln} --tree {input.tree} --output {output.results} --classes {CODONSTSV} --neutral NEUTRAL"
 #end rule BUSTEDMSS
 
+rule FMM:
+    input: 
+        codon_aln = rules.post_msa.output.codons_fas,
+        tree = rules.iqtree.output.tree      
+    output: 
+        results = os.path.join(OUTDIR, Label + "_codons.fasta.FMM.json")
+    conda: 'environment.yaml'
+    shell: 
+        "hyphy {FMM} --alignment {input.codon_aln} --tree {input.tree} --output {output.results} --triple-islands Yes"
+#end rule FMM
 
 
 #----------------------------------------------------------------------------
