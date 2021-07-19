@@ -1,6 +1,8 @@
-Nucleotide: data/TP53_refseq_transcript.fasta
-Protein: data/TP53_refseq_protein.fasta
-Label: "TP53"
+Nucleotide: data/REV3L/REV3L_refseq_transcript.fasta
+Protein: data/REV3L/REV3L_refseq_protein.fasta
+Label: "REV3L"
+
+
 HyPhy: /usr/local/bin/hyphy
 pre-msa: /home/aglucaci//hyphy-analyses/codon-msa/pre-msa.bf
 MAFFT: /usr/bin/mafft
@@ -8,3 +10,6 @@ post-msa: /home/aglucaci//hyphy-analyses/codon-msa/post-msa.bf
 FMM: /home/aglucaci/hyphy-analyses/FitMultiModel/FitMultiModel.bf
 BUSTEDSMH: /home/aglucaci/hyphy-analyses/BUSTED-MH/BUSTED-MH.bf
 IQTREE: /usr/bin/iqtree
+MSS: /home/aglucaci/hyphy-analyses/MulticlassSynonymousSubstitutions/MultipleSynClasses.bf
+BUSTEDMSS: /home/aglucaci/hyphy-analyses/MulticlassSynonymousSubstitutions/BUSTED-MSS.bf
+CODONSTSV: /home/aglucaci/hyphy-analyses/MulticlassSynonymousSubstitutions/codons.tsv

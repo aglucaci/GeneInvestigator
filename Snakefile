@@ -7,6 +7,7 @@ import os
 import sys
 import csv
 import json
+from pathlib import Path
 from snakemake.utils import min_version
 #min_version('6.3.0')
 
@@ -14,7 +15,6 @@ from snakemake.utils import min_version
 # Configuration
 #----------------------------------------------------------------------------
 configfile: 'config.yaml'
-
 Nucleotide_file = config["Nucleotide"]
 Protein_file = config["Protein"]
 Label = config["Label"]
@@ -23,9 +23,18 @@ PREMSA = config["pre-msa"]
 MAFFT = config["MAFFT"]
 POSTMSA = config["post-msa"]
 IQTREE = config["IQTREE"]
-
 FMM = config["FMM"]
 BUSTEDS_MH = config["BUSTEDSMH"]
+MSS = config["MSS"]
+BUSTEDMSS = config["BUSTEDMSS"]
+CODONSTSV = config["CODONSTSV"]
+
+# Set output directory
+BASEDIR = os.getcwd()
+OUTDIR = os.path.join(BASEDIR, "results/" + Label)
+
+# Create output dir.
+Path(OUTDIR).mkdir(parents=True, exist_ok=True)
 
 #----------------------------------------------------------------------------
 # Helper functions
@@ -37,22 +46,25 @@ BUSTEDS_MH = config["BUSTEDSMH"]
 #----------------------------------------------------------------------------
 rule all:
     input:
-        os.path.join("results", Label),
-        os.path.join("results", Label + "_protein.fas"),
-        os.path.join("results", Label + "_nuc.fas"),
-        os.path.join("results", Label + "_protein.aln"),
-        os.path.join("results", Label + "_codons.fasta"),
-        os.path.join("results", Label + "_codons_duplicates.json"),
-        os.path.join("results", Label + "_codons.fasta.treefile"),
-        os.path.join("results", Label + "_codons.fasta.FEL.json"),
-        os.path.join("results", Label + "_codons.fasta.FUBAR.json"),
-        os.path.join("results", Label + "_codons.fasta.BUSTEDS.json"),
-        os.path.join("results", Label + "_codons.fasta.MEME.json"),
-        os.path.join("results", Label + "_codons.fasta.ABSREL.json"),
-        os.path.join("results", Label + "_codons.fasta.SLAC.json"),
-        os.path.join("results", Label + "_codons.fasta.BGM.json"),
-        os.path.join("results", Label + "_codons.fasta.PRIME.json"),
-        os.path.join("results", Label + "_codons.fasta.ABSREL-MH.json")
+        os.path.join(OUTDIR, Label),
+        os.path.join(OUTDIR, Label + "_protein.fas"),
+        os.path.join(OUTDIR, Label + "_nuc.fas"),
+        os.path.join(OUTDIR, Label + "_protein.aln"),
+        os.path.join(OUTDIR, Label + "_codons.fasta"),
+        os.path.join(OUTDIR, Label + "_codons_duplicates.json"),
+        os.path.join(OUTDIR, Label + "_codons.fasta.treefile"),
+        os.path.join(OUTDIR, Label + "_codons.fasta.FEL.json"),
+        os.path.join(OUTDIR, Label + "_codons.fasta.FUBAR.json"),
+        os.path.join(OUTDIR, Label + "_codons.fasta.BUSTEDS.json"),
+        os.path.join(OUTDIR, Label + "_codons.fasta.MEME.json"),
+        os.path.join(OUTDIR, Label + "_codons.fasta.ABSREL.json"),
+        os.path.join(OUTDIR, Label + "_codons.fasta.SLAC.json"),
+        os.path.join(OUTDIR, Label + "_codons.fasta.BGM.json"),
+        os.path.join(OUTDIR, Label + "_codons.fasta.PRIME.json"),
+        os.path.join(OUTDIR, Label + "_codons.fasta.ABSREL-MH.json"),
+        os.path.join(OUTDIR, Label + "_codons.fasta.BUSTEDS-MH.json"),
+        os.path.join(OUTDIR, Label + "_codons.fasta.MSS.json"),
+        os.path.join(OUTDIR, Label + "_codons.fasta.BUSTED-MSS.json")
 #end rule all
 
 #----------------------------------------------------------------------------
@@ -60,11 +72,12 @@ rule all:
 #----------------------------------------------------------------------------
 rule get_codons:
     output:
-        codons = "results/" + Label
+        codons = os.path.join(OUTDIR, Label)
     params:
         Nuc = Nucleotide_file,
         Prot = Protein_file,
-        Out = os.path.join("results", Label)
+        Out = os.path.join(OUTDIR, Label)
+    conda: 'environment.yaml'
     script:
         "scripts/codons.py"
 #end rule get_codons
@@ -73,8 +86,8 @@ rule pre_msa:
     input: 
         codons = rules.get_codons.output.codons
     output: 
-        protein_fas = os.path.join("results", Label + "_protein.fas"),
-        nucleotide_fas = os.path.join("results", Label + "_nuc.fas")
+        protein_fas = os.path.join(OUTDIR, Label + "_protein.fas"),
+        nucleotide_fas = os.path.join(OUTDIR, Label + "_nuc.fas")
     conda: 'environment.yaml'
     shell: 
         "hyphy {PREMSA} --input {input.codons}"
@@ -84,7 +97,7 @@ rule mafft:
     input:
         protein = rules.pre_msa.output.protein_fas
     output:
-        protein_aln = os.path.join("results", Label + "_protein.aln")
+        protein_aln = os.path.join(OUTDIR, Label + "_protein.aln")
     conda: 'environment.yaml'
     shell:
         "mafft --auto {input.protein} > {output.protein_aln}"
@@ -95,8 +108,8 @@ rule post_msa:
         protein_aln = rules.mafft.output.protein_aln,
         nucleotide_seqs = rules.pre_msa.output.nucleotide_fas      
     output: 
-        codons_fas = os.path.join("results", Label + "_codons.fasta"),
-        duplicates_json = os.path.join("results", Label + "_codons_duplicates.json")
+        codons_fas = os.path.join(OUTDIR, Label + "_codons.fasta"),
+        duplicates_json = os.path.join(OUTDIR, Label + "_codons_duplicates.json")
     conda: 'environment.yaml'
     shell: 
         "hyphy {POSTMSA} --protein-msa {input.protein_aln} --nucleotide-sequences {input.nucleotide_seqs} --output {output.codons_fas} --duplicates {output.duplicates_json}"
@@ -114,7 +127,7 @@ rule iqtree:
     input:
         codons_fas = rules.post_msa.output.codons_fas
     output:
-        tree = os.path.join("results", Label + "_codons.fasta.treefile")
+        tree = os.path.join(OUTDIR, Label + "_codons.fasta.treefile")
     conda: 'environment.yaml'
     shell:
         "iqtree -s {input.codons_fas}"
@@ -137,9 +150,10 @@ rule FEL:
         codon_aln = rules.post_msa.output.codons_fas,
         tree = rules.iqtree.output.tree      
     output: 
-        results = os.path.join("results", Label + "_codons.fasta.FEL.json")
+        results = os.path.join(OUTDIR, Label + "_codons.fasta.FEL.json")
+    conda: 'environment.yaml'
     shell: 
-        "{HYPHY} FEL --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
+        "hyphy FEL --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
 #end rule FEL
 
 rule FUBAR:
@@ -147,9 +161,10 @@ rule FUBAR:
         codon_aln = rules.post_msa.output.codons_fas,
         tree = rules.iqtree.output.tree      
     output: 
-        results = os.path.join("results", Label + "_codons.fasta.FUBAR.json")
+        results = os.path.join(OUTDIR, Label + "_codons.fasta.FUBAR.json")
+    conda: 'environment.yaml'    
     shell: 
-        "{HYPHY} FUBAR --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
+        "hyphy FUBAR --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
 #end rule FUBAR
 
 rule BUSTEDS:
@@ -157,9 +172,10 @@ rule BUSTEDS:
         codon_aln = rules.post_msa.output.codons_fas,
         tree = rules.iqtree.output.tree      
     output: 
-        results = os.path.join("results", Label + "_codons.fasta.BUSTEDS.json")
+        results = os.path.join(OUTDIR, Label + "_codons.fasta.BUSTEDS.json")
+    conda: 'environment.yaml'
     shell: 
-        "{HYPHY} BUSTED --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
+        "hyphy BUSTED --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
 #end rule BUSTEDS
 
 rule MEME:
@@ -167,9 +183,10 @@ rule MEME:
         codon_aln = rules.post_msa.output.codons_fas,
         tree = rules.iqtree.output.tree      
     output: 
-        results = os.path.join("results", Label + "_codons.fasta.MEME.json")
+        results = os.path.join(OUTDIR, Label + "_codons.fasta.MEME.json")
+    conda: 'environment.yaml'
     shell: 
-        "{HYPHY} MEME --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
+        "hyphy MEME --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
 #end rule MEME
 
 rule ABSREL:
@@ -177,9 +194,10 @@ rule ABSREL:
         codon_aln = rules.post_msa.output.codons_fas,
         tree = rules.iqtree.output.tree      
     output: 
-        results = os.path.join("results", Label + "_codons.fasta.ABSREL.json")
+        results = os.path.join(OUTDIR, Label + "_codons.fasta.ABSREL.json")
+    conda: 'environment.yaml'
     shell: 
-        "{HYPHY} ABSREL --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
+        "hyphy ABSREL --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
 #end rule ABSREL
 
 rule SLAC:
@@ -187,9 +205,10 @@ rule SLAC:
         codon_aln = rules.post_msa.output.codons_fas,
         tree = rules.iqtree.output.tree      
     output: 
-        results = os.path.join("results", Label + "_codons.fasta.SLAC.json")
+        results = os.path.join(OUTDIR, Label + "_codons.fasta.SLAC.json")
+    conda: 'environment.yaml'
     shell: 
-        "{HYPHY} SLAC --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
+        "hyphy SLAC --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
 #end rule 
 
 rule BGM:
@@ -197,9 +216,10 @@ rule BGM:
         codon_aln = rules.post_msa.output.codons_fas,
         tree = rules.iqtree.output.tree      
     output: 
-        results = os.path.join("results", Label + "_codons.fasta.BGM.json")
+        results = os.path.join(OUTDIR, Label + "_codons.fasta.BGM.json")
+    conda: 'environment.yaml'
     shell: 
-        "{HYPHY} BGM --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
+        "hyphy BGM --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
 #end rule 
 
 rule PRIME:
@@ -207,9 +227,10 @@ rule PRIME:
         codon_aln = rules.post_msa.output.codons_fas,
         tree = rules.iqtree.output.tree      
     output: 
-        results = os.path.join("results", Label + "_codons.fasta.PRIME.json")
+        results = os.path.join(OUTDIR, Label + "_codons.fasta.PRIME.json")
+    conda: 'environment.yaml'
     shell: 
-        "{HYPHY} PRIME --alignment {input.codon_aln} --tree {input.tree} --output {output.results} --impute-states Yes"
+        "hyphy PRIME --alignment {input.codon_aln} --tree {input.tree} --output {output.results} --impute-states Yes"
 #end rule 
 
 rule ABSRELMH:
@@ -217,10 +238,46 @@ rule ABSRELMH:
         codon_aln = rules.post_msa.output.codons_fas,
         tree = rules.iqtree.output.tree      
     output: 
-        results = os.path.join("results", Label + "_codons.fasta.ABSREL-MH.json")
+        results = os.path.join(OUTDIR, Label + "_codons.fasta.ABSREL-MH.json")
+    conda: 'environment.yaml'
     shell: 
-        "{HYPHY} ABSREL --alignment {input.codon_aln} --tree {input.tree} --output {output.results} --multiple-hits Double+Triple"
-#end rule ABSREL
+        "hyphy ABSREL --alignment {input.codon_aln} --tree {input.tree} --output {output.results} --multiple-hits Double+Triple"
+#end rule ABSRELMH
+
+rule BUSTEDSMH:
+    input: 
+        codon_aln = rules.post_msa.output.codons_fas,
+        tree = rules.iqtree.output.tree      
+    output: 
+        results = os.path.join(OUTDIR, Label + "_codons.fasta.BUSTEDS-MH.json")
+    conda: 'environment.yaml'
+    shell: 
+        "hyphy {BUSTEDS_MH} --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
+#end rule BUSTEDSMH
+
+rule MSS:
+    input: 
+        codon_aln = rules.post_msa.output.codons_fas,
+        tree = rules.iqtree.output.tree      
+    output: 
+        results = os.path.join(OUTDIR, Label + "_codons.fasta.MSS.json")
+    conda: 'environment.yaml'
+    shell: 
+        "hyphy {MSS} --alignment {input.codon_aln} --tree {input.tree} --output {output.results} --neutral NEUTRAL --classes {CODONSTSV} --type global --frequencies CF3x4 --ci Yes --lrt Yes"
+#end rule MSS
+
+rule BUSTEDMSS:
+    input: 
+        codon_aln = rules.post_msa.output.codons_fas,
+        tree = rules.iqtree.output.tree      
+    output: 
+        results = os.path.join(OUTDIR, Label + "_codons.fasta.BUSTED-MSS.json")
+    conda: 'environment.yaml'
+    shell: 
+        "hyphy {BUSTEDMSS} --alignment {input.codon_aln} --tree {input.tree} --output {output.results} --classes {CODONSTSV} --neutral NEUTRAL"
+#end rule BUSTEDMSS
+
+
 
 #----------------------------------------------------------------------------
 # End of file
