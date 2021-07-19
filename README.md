@@ -8,7 +8,7 @@ There is an assumption that the freely available Anaconda software is installed 
 
 You will also need to download the standalone hyphy-analyses repository (https://github.com/veg/hyphy-analyses). Make sure to modify the config.yaml to point to the correct directory on your system
 
-To install -- Steps necessary to complete before running
+### To install -- Steps necessary to complete before running
 `git clone https://github.com/aglucaci/GeneInvestigator.git`
 `conda env create -f environment.yaml`. This will create a virtual environment called (GeneInvestigator) with the necessary dependencies.
 At this point, run conda activate GeneInvestigator and your environment will be ready to go.
