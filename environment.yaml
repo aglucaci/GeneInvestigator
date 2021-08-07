@@ -16,3 +16,4 @@ dependencies:
   - mafft=7.475
   - python=3.8
   - pandas=1.2.4
+  - mamba
