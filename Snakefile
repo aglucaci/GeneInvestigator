@@ -15,14 +15,18 @@ from snakemake.utils import min_version
 # Configuration
 #----------------------------------------------------------------------------
 configfile: 'config.yaml'
+
 Nucleotide_file = config["Nucleotide"]
 Protein_file = config["Protein"]
 Label = config["Label"]
+
 #HYPHY = config["HyPhy"]
 PREMSA = config["pre-msa"]
 #MAFFT = config["MAFFT"]
 POSTMSA = config["post-msa"]
 #IQTREE = config["IQTREE"]
+
+# Batch files
 FMM = config["FMM"]
 BUSTEDS_MH = config["BUSTEDSMH"]
 MSS = config["MSS"]
@@ -63,8 +67,6 @@ rule all:
         os.path.join(OUTDIR, Label + "_codons.fasta.PRIME.json"),
         os.path.join(OUTDIR, Label + "_codons.fasta.ABSREL-MH.json"),
         os.path.join(OUTDIR, Label + "_codons.fasta.BUSTEDS-MH.json"),
-        os.path.join(OUTDIR, Label + "_codons.fasta.MSS.json"),
-        os.path.join(OUTDIR, Label + "_codons.fasta.BUSTED-MSS.json"),
         os.path.join(OUTDIR, Label + "_codons.fasta.FMM.json")
 #end rule all
 
