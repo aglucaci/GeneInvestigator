@@ -2,9 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Feb  2 13:04:15 2020
-@author: alexander g. lucaci
-The idea for this is that:
-    
+@author: Alexander G. Lucaci
+The idea for this script is that:
     Given a protein sequence and a transcript sequence
     I find the codons by stepping over the transcript sequence until the translated sequence matches the protein sequence
     that way, I have only the codons and not the additional sequences from the transcript
@@ -18,37 +17,21 @@ The idea for this is that:
 # Imports
 # =============================================================================
 from Bio import SeqIO
-#from Bio.Alphabet import generic_rna
 import sys
 import argparse
 
 # =============================================================================
 # Declares
 # =============================================================================
-#PROTEIN_FASTA = sys.argv[1]
-#TRANSCRIPTS_FASTA = sys.argv[2]
-#OUTPUT = sys.argv[3]
-
 PROTEIN_FASTA = snakemake.params.Prot
 TRANSCRIPTS_FASTA = snakemake.params.Nuc
 OUTPUT = snakemake.params.Out
-
 results = []
 no_match = []
-
-#arguments = argparse.ArgumentParser(description='Combine alignments into a single file, adding a reference sequence as well')
-#arguments.add_argument('-i', '--input',            help = 'FASTA file to process',                         required = True, type = str )
-#arguments.add_argument('-o', '--output',           help = 'Directory for output and working files',        required = True, type = str)
-#settings = arguments.parse_args()
 
 # =============================================================================
 # Helper functions
 # =============================================================================
-#turn into class
-def check_against_protein_fasta(test_protein_seq, protein_file, species):
-    # If the proteins are not the same length, exit
-    pass
-
 def already_in_results(transcript_desc):
     global results
     Found = False
@@ -66,7 +49,6 @@ def already_in_results(transcript_desc):
 
 def Process(protein_desc, protein_seq, TRANSCRIPTS_FASTA, species): #protein species
     global results, no_match
-    #Loop over TRANSCRIPT_SEQ
     start = 0
     NT_SEQ_LENGTH = len(protein_seq) * 3
     # loop over all of the TRANSCRIPTS_Fasta seqs
@@ -139,8 +121,6 @@ def main(PROTEIN, TRANSCRIPTS): # Really to verify things.
     protein_list = []
     transcript_list = []
     with open(TRANSCRIPTS, "r") as handle:
-        #x = SeqIO.parse(handle, "fasta")
-        #print(len(x))
         trans_count = 0 
         for record in SeqIO.parse(handle, "fasta"):
             trans_count +=1
@@ -158,10 +138,7 @@ def main(PROTEIN, TRANSCRIPTS): # Really to verify things.
         print("# Proteins:", prot_count)
     handle.close()
     
-    #assert(trans_count == prot_count, "Counts do not match") # Check to make sure we have the same number of proteins and transcripts
     return trans_count, prot_count
-    #for n, item in enumerate(transcript_list):
-    #    print(item, [protein_list[n]])
 #end method
 
 # =============================================================================

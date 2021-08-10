@@ -17,4 +17,4 @@ snakemake \
       --keep-going \
       --reason \
       --latency-wait 60 \
-      --use-conda
+      --use-conda 

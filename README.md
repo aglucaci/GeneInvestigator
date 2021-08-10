@@ -38,3 +38,5 @@ The following are JSON files produced by HyPhy analyses. These can be visualized
 │   ├── TP53.BUSTEDS-MSS.json
 ```
 
+
+Alternative name: Analysis of Orthologous Collections (AOC)

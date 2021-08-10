@@ -4,5 +4,5 @@ __default__:
   nodes: 1
   ppn: 8
   time: 1-0
-  name: "epyc2"
+  name: "epyc"
   memory: 4G
