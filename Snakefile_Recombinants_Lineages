@@ -1,0 +1,103 @@
+"""``snakemake`` file that runs the Gene Investigator analysis.
+Written by Alexander G Lucaci.
+"""
+
+import itertools
+import os
+import sys
+import csv
+import json
+from pathlib import Path
+from snakemake.utils import min_version
+import glob
+
+#----------------------------------------------------------------------------
+# Configuration
+#----------------------------------------------------------------------------
+configfile: 'config.yaml'
+
+#Nucleotide_file = config["Nucleotide"]
+#Protein_file = config["Protein"]
+#CSV = config["CSV"]
+Label = config["Label"]
+
+# Batch files
+#PREMSA = config["PREMSA"]
+#POSTMSA = config["POSTMSA"]
+#FMM = config["FMM"]
+#BUSTEDS_MH = config["BUSTEDSMH"]
+#LabelTrees_bf = config["LabelTrees"]
+
+# Set output directory
+BASEDIR = os.getcwd()
+OUTDIR = os.path.join(BASEDIR, "results/" + Label + "Recombinants") 
+
+# Create output dir.
+Path(OUTDIR).mkdir(parents=True, exist_ok=True)
+
+# Get files in output directory that end in *.clade
+#LINEAGES = glob.glob(os.path.join(OUTDIR, "*.clade"))
+
+# Formatted for IQ-TREE output
+#NEWICK_TREE = glob.glob(os.path.join(OUTDIR, "*.treefile"))
+
+
+Recombinant = config["Recombinant"]
+
+CLADES = glob.glob(Recombinant + ".treefile.*")
+print(CLADES)
+
+CLADE_LABELS = [str(x).split("/")[-1] for x in CLADES]
+CLADE_LABELS = [str(x).split(".")[-1] for x in CLADE_LABELS]
+print(CLADE_LABELS)
+#----------------------------------------------------------------------------
+# Helper functions
+#----------------------------------------------------------------------------
+
+
+#----------------------------------------------------------------------------
+# Rule all
+#----------------------------------------------------------------------------
+rule all:
+    input:
+        expand(os.path.join(OUTDIR, Label + "_{cl}.RELAX.json"), cl=CLADE_LABELS)
+#end rule all
+
+#----------------------------------------------------------------------------
+# Rules
+#----------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------
+# Annotate tree for taxonomy.
+#----------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------
+# Selection Analyses
+#----------------------------------------------------------------------------
+
+rule RELAX:
+    input: 
+        codon_aln = Recombinant,
+        tree = expand(Recombinant + ".treefile.{cl}      
+    output: 
+        results = expand(os.path.join
+    conda: 'environment.yaml'
+    shell: 
+        "hyphy RELAX --alignment {input.codon_aln} --tree {input.tree} --output {output.results} --test {cl} --models All --mode 'Group mode'"
+#end rule FEL
+
+#rule FUBAR:
+#    input: 
+#        codon_aln = rules.post_msa.output.codons_fas,
+#        tree = rules.iqtree.output.tree      
+#    output: 
+#        results = os.path.join(OUTDIR, Label + "_codons.fasta.FUBAR.json")
+#    conda: 'environment.yaml'    
+#    shell: 
+#        "hyphy FUBAR --alignment {input.codon_aln} --tree {input.tree} --output {output.results}"
+#end rule FUBAR
+
+
+#----------------------------------------------------------------------------
+# End of file
+#----------------------------------------------------------------------------
