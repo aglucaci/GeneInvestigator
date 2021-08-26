@@ -1,0 +1,410 @@
+IQ-TREE 2.1.2 COVID-edition built Mar 30 2021
+
+Input file name: /home/aglucaci/GeneInvestigator/results/BDNF/BDNF_codons.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 334846
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 132 sequences with 1347 nucleotide sites
+Number of constant sites: 698 (= 51.8189% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 698 (= 51.8189% of all sites)
+Number of parsimony informative sites: 530
+Number of distinct site patterns: 710
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TVMe+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TVMe+I+G4        -16496.420   33526.841 - 4.76e-09   33659.474 -  5.8e-05   34916.745 +    0.767
+GTR+F+I+G4       -16483.692   33509.384 - 2.94e-05   33646.522 -   0.0377   34920.111 +    0.143
+SYM+I+G4         -16494.956   33525.912 - 7.57e-09   33659.664 - 5.28e-05   34921.023 +   0.0904
+TIM+F+I+G4       -16498.223   33534.447 - 1.06e-10   33669.321 - 4.22e-07   34934.763 - 9.38e-05
+TIM3+F+I+G4      -16499.826   33537.651 - 2.14e-11   33672.526 -  8.5e-08   34937.967 - 1.89e-05
+TIM3e+I+G4       -16513.567   33559.133 - 4.63e-16   33690.655 - 9.83e-12   34943.832 - 1.01e-06
+TVM+F+I+G4       -16502.381   33544.763 - 6.11e-13   33680.767 - 1.38e-09   34950.284 -    4e-08
+TN+F+I+G4        -16509.844   33555.689 - 2.59e-15   33689.440 -  1.8e-11   34950.799 - 3.09e-08
+TIM2+F+I+G4      -16508.323   33554.645 - 4.36e-15   33689.520 - 1.73e-11   34954.961 - 3.86e-09
+GTR+F+R8         -16461.497   33488.994 +    0.787   33640.211 +    0.884   34962.188 - 1.04e-10
+GTR+F+R7         -16469.392   33500.784 -  0.00217   33649.595 -   0.0081   34963.567 - 5.22e-11
+K3P+I+G4         -16527.755   33585.510 - 8.67e-22   33715.926 -  3.2e-17   34965.003 - 2.55e-11
+K3Pu+F+I+G4      -16517.492   33570.985 - 1.24e-18   33704.736 - 8.61e-15   34966.095 - 1.47e-11
+TPM3u+F+I+G4     -16518.452   33572.904 - 4.73e-19   33706.656 -  3.3e-15   34968.015 - 5.65e-12
+TPM3+F+I+G4      -16518.452   33572.904 - 4.73e-19   33706.656 -  3.3e-15   34968.015 - 5.65e-12
+TIMe+I+G4        -16526.355   33584.709 - 1.29e-21   33716.232 - 2.75e-17   34969.408 - 2.81e-12
+GTR+F+R9         -16460.814   33491.629 +    0.211   33645.276 +   0.0702   34975.235 - 1.53e-13
+K2P+I+G4         -16538.122   33604.244 - 7.41e-26   33733.560 - 4.74e-21   34978.531 - 2.94e-14
+TIM2e+I+G4       -16531.995   33595.990 - 4.59e-24   33727.512 - 9.75e-20   34980.689 - 9.99e-15
+HKY+F+I+G4       -16529.142   33592.285 - 2.93e-23   33724.918 - 3.57e-19   34982.189 - 4.72e-15
+TNe+I+G4         -16536.694   33603.387 - 1.14e-25   33733.804 -  4.2e-21   34982.881 - 3.34e-15
+TPM2u+F+I+G4     -16527.885   33591.770 - 3.79e-23   33725.522 - 2.64e-19   34986.881 - 4.52e-16
+TPM2+F+I+G4      -16527.885   33591.770 - 3.79e-23   33725.522 - 2.64e-19   34986.881 - 4.52e-16
+GTR+F+R6         -16495.894   33549.789 - 4.95e-14   33696.218 - 6.09e-13   35002.161 - 2.17e-19
+GTR+F+G4         -16529.943   33599.886 - 6.55e-25   33735.890 - 1.48e-21   35005.408 - 4.29e-20
+GTR+F+R5         -16531.411   33616.821 - 1.38e-28   33760.892 - 5.51e-27   35058.782 -  1.1e-31
+GTR+F+R4         -16577.802   33705.603 - 7.24e-48   33847.340 - 9.31e-46   35137.153 - 1.06e-48
+GTR+F+R3         -16675.354   33896.709 -  2.3e-89   34036.134 - 9.39e-87   35317.847 - 6.12e-88
+GTR+F+R2         -16925.643   34393.287 - 3.4e-197   34530.425 - 4.35e-194   35804.014 - 1.65e-193
+JC+I+G4          -17005.738   34537.476 - 1.66e-228   34665.698 - 1.84e-223   35906.558 - 8.9e-216
+F81+F+I+G4       -16999.122   34530.245 - 6.18e-227   34661.767 - 1.31e-222   35914.943 - 1.35e-217
+GTR+F+I          -17273.081   35086.162 -        0   35222.166 -        0   36491.683 -        0
+GTR+F            -18962.866   38463.732 -        0   38598.606 -        0   39864.047 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TVMe+I+G4
+
+Rate parameter R:
+
+  A-C: 1.2355
+  A-G: 3.1671
+  A-T: 0.4667
+  C-G: 1.0606
+  C-T: 3.1671
+  G-T: 1.0000
+
+State frequencies: (equal frequencies)
+
+Rate matrix Q:
+
+  A   -0.9645    0.2447    0.6273   0.09244
+  C    0.2447    -1.082    0.2101    0.6273
+  G    0.6273    0.2101    -1.036    0.1981
+  T   0.09244    0.6273    0.1981   -0.9179
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.3653
+Gamma shape alpha: 0.755
+
+ Category  Relative_rate  Proportion
+  0         0              0.3653
+  1         0.1354         0.1587
+  2         0.6118         0.1587
+  3         1.487          0.1587
+  4         4.068          0.1587
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -16210.2291 (s.e. 580.2912)
+Unconstrained log-likelihood (without tree): -7249.4322
+Number of free parameters (#branches + #model parameters): 267
+Akaike information criterion (AIC) score: 32954.4582
+Corrected Akaike information criterion (AICc) score: 33087.0921
+Bayesian information criterion (BIC) score: 34344.3628
+
+Total tree length (sum of branch lengths): 8.3853
+Sum of internal branch lengths: 4.1085 (48.9961% of tree length)
+
+WARNING: 14 near-zero internal branches (<0.0007) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'NM_001709_5_Homo_sapiens_brain_derived_neurotrophic_factor_BDNF_transcript_variant_4_mRNA_1' is drawn at root
+
++--NM_001709_5_Homo_sapiens_brain_derived_neurotrophic_factor_BDNF_transcript_variant_4_mRNA_1
+|
+|                                                                       +**NM_001270630_1_Rattus_norvegicus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_1_mRNA_1
+|                                                          +------------|
+|                                                          |            |        +**NM_001048142_1_Mus_musculus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_4_mRNA_1
+|                                                          |            |     +--|
+|                                                          |            |     |  +--XM_021151236_2_PREDICTED_Mus_caroli_brain_derived_neurotrophic_factor_Bdnf_mRNA_1
+|                                                          |            |  +--|
+|                                                          |            |  |  +--XM_021192829_2_PREDICTED_Mus_pahari_brain_derived_neurotrophic_factor_Bdnf_mRNA_1
+|                                                          |            +--|
+|                                                          |               +--XM_032903861_1_PREDICTED_Rattus_rattus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1
+|                                                       +--|
+|                                                       |  +--XM_008584165_1_PREDICTED_Galeopterus_variegatus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                    +--|
+|                                                    |  +--XM_020286534_1_PREDICTED_Microcebus_murinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                 +--|
+|                                                 |  |           +--XM_015114598_2_PREDICTED_Macaca_mulatta_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_3
+|                                                 |  |        +**|
+|                                                 |  |        |  +--XM_008003703_2_PREDICTED_Chlorocebus_sabaeus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                 |  |     +--|
+|                                                 |  |     |  |        +--XM_011936307_1_PREDICTED_Colobus_angolensis_palliatus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                 |  |     |  |     +**|
+|                                                 |  |     |  |     |  +--XM_033205475_1_PREDICTED_Trachypithecus_francoisi_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                 |  |     |  |  +--|
+|                                                 |  |     |  |  |  |  +--XM_017858805_1_PREDICTED_Rhinopithecus_bieti_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                 |  |     |  |  |  +--|
+|                                                 |  |     |  |  |     +**XM_010374529_2_PREDICTED_Rhinopithecus_roxellana_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                 |  |     |  +**|
+|                                                 |  |     |     +--XM_017948537_3_PREDICTED_Papio_anubis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_2
+|                                                 |  |  +--|
+|                                                 |  |  |  |  +--XM_012031697_1_PREDICTED_Cercocebus_atys_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                 |  |  |  +--|
+|                                                 |  |  |     +--XM_011964715_1_PREDICTED_Mandrillus_leucophaeus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                 |  +--|
+|                                                 |     |     +--XM_002821931_2_PREDICTED_Pongo_abelii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                 |     |  +--|
+|                                                 |     |  |  |  +--XM_003254347_2_PREDICTED_Nomascus_leucogenys_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                 |     |  |  +--|
+|                                                 |     |  |     +--XM_032166370_1_PREDICTED_Hylobates_moloch_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                 |     +--|
+|                                                 |        |     +--XM_003919940_3_PREDICTED_Saimiri_boliviensis_boliviensis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                 |        |  +--|
+|                                                 |        |  |  |  +--XM_032283691_1_PREDICTED_Sapajus_apella_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                 |        |  |  +--|
+|                                                 |        |  |     +--XM_017538722_1_PREDICTED_Cebus_imitator_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                                 |        +--|
+|                                                 |           +--XM_012452238_1_PREDICTED_Aotus_nancymaae_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                              +--|
+|                                              |  |  +--XM_037839114_1_PREDICTED_Choloepus_didactylus_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|                                              |  +--|
+|                                              |     +--XM_012523604_2_PREDICTED_Dasypus_novemcinctus_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|                                           +--|
+|                                           |  |                 +--XM_040980297_1_PREDICTED_Ochotona_curzoniae_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                           |  |        +--------|
+|                                           |  |        |        +**XM_004585440_1_PREDICTED_Ochotona_princeps_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                           |  |     +--|
+|                                           |  |     |  +--XM_006883713_1_PREDICTED_Elephantulus_edwardii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                           |  |  +--|
+|                                           |  |  |  |  +---------XM_004708253_2_PREDICTED_Echinops_telfairi_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                           |  |  |  +--|
+|                                           |  |  |     +--XM_006864851_1_PREDICTED_Chrysochloris_asiatica_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                           |  +--|
+|                                           |     |  +---XM_007951952_1_PREDICTED_Orycteropus_afer_afer_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                           |     +--|
+|                                           |        +--XM_004369733_1_PREDICTED_Trichechus_manatus_latirostris_brain_derived_neurotrophic_factor_LOC101350169_transcript_variant_X1_mRNA_1
+|                                        +**|
+|                                        |  |        +**XM_011362565_2_PREDICTED_Pteropus_vampyrus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                        |  |     +--|
+|                                        |  |     |  +--XM_039866065_1_PREDICTED_Pteropus_giganteus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                        |  |  +--|
+|                                        |  |  |  +--XM_006907988_2_PREDICTED_Pteropus_alecto_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                        |  +--|
+|                                        |     |        +--XM_037040421_1_PREDICTED_Sturnira_hondurensis_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|                                        |     |     +--|
+|                                        |     |     |  +--XM_037146035_1_PREDICTED_Artibeus_jamaicensis_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|                                        |     |  +**|
+|                                        |     |  |  +--XM_024558903_1_PREDICTED_Desmodus_rotundus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                                        |     +--|
+|                                        |        +--XM_028517638_2_PREDICTED_Phyllostomus_discolor_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                              +---------|
+|                              |         |              +--NM_001009828_1_Felis_catus_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|                              |         |           +--|
+|                              |         |           |  +--XM_030333208_1_PREDICTED_Lynx_canadensis_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|                              |         |        +--|
+|                              |         |        |  +--XM_015544869_1_PREDICTED_Panthera_tigris_altaica_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|                              |         |     +--|
+|                              |         |     |  +--XM_029957152_1_PREDICTED_Suricata_suricatta_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                              |         |  +--|
+|                              |         |  |  +--XM_039217098_1_PREDICTED_Hyaena_hyaena_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|                              |         +--|
+|                              |            +----------XM_016194241_1_PREDICTED_Erinaceus_europaeus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                       +------|
+|                       |      |             +--XM_004408653_1_PREDICTED_Odobenus_rosmarus_divergens_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                       |      |          +--|
+|                       |      |          |  |     +**XM_021685880_1_PREDICTED_Neomonachus_schauinslandi_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                       |      |          |  |  +--|
+|                       |      |          |  |  |  +--XM_031025064_1_PREDICTED_Leptonychotes_weddellii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                       |      |          |  +--|
+|                       |      |          |     |     +**XM_036109493_1_PREDICTED_Halichoerus_grypus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                       |      |          |     |  +--|
+|                       |      |          |     |  |  +--XM_032414183_1_PREDICTED_Phoca_vitulina_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X6_mRNA_1
+|                       |      |          |     +**|
+|                       |      |          |        +--XM_035012477_1_PREDICTED_Mirounga_leonina_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|                       |      |       +--|
+|                       |      |       |  +--XM_025879326_1_PREDICTED_Callorhinus_ursinus_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|                       |      |    +**|
+|                       |      |    |  +**XM_028117708_1_PREDICTED_Eumetopias_jubatus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                       |      +----|
+|                       |           +--XM_027577807_1_PREDICTED_Zalophus_californianus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                    +--|
+|                    |  |     +--XM_011226480_3_PREDICTED_Ailuropoda_melanoleuca_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|                    |  |  +--|
+|                    |  |  |  +--XM_026512203_1_PREDICTED_Ursus_arctos_horribilis_brain_derived_neurotrophic_factor_BDNF_mRNA_2
+|                    |  +--|
+|                    |     |     +--XM_009007854_3_PREDICTED_Callithrix_jacchus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                    |     |  +--|
+|                    |     |  |  |     +--XM_033118944_1_PREDICTED_Rhinolophus_ferrumequinum_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|                    |     |  |  |  +--|
+|                    |     |  |  |  |  +----XM_019650718_1_PREDICTED_Hipposideros_armiger_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                    |     |  |  +--|
+|                    |     |  |     +--XM_036258707_1_PREDICTED_Molossus_molossus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                    |     +--|
+|                    |        |  +**XM_015476449_1_PREDICTED_Marmota_marmota_marmota_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1
+|                    |        +--|
+|                    |           |        +--XM_040284582_1_PREDICTED_Ictidomys_tridecemlineatus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1
+|                    |           |     +--|
+|                    |           |     |  +--XM_026412272_1_PREDICTED_Urocitellus_parryii_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1
+|                    |           +-----|
+|                    |                 +--XM_027936596_1_PREDICTED_Marmota_flaviventris_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1
+|                 +--|
+|                 |  |  +--XM_012649556_1_PREDICTED_Propithecus_coquereli_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|                 |  +--|
+|                 |     +--XM_012814047_1_PREDICTED_Otolemur_garnettii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              +--|
+|              |  |              +--XM_005654684_3_PREDICTED_Sus_scrofa_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |           +--|
+|              |  |           |  |                      +--XM_005216334_4_PREDICTED_Bos_taurus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_2
+|              |  |           |  |                   +--|
+|              |  |           |  |                   |  |     +**XM_010831788_1_PREDICTED_Bison_bison_bison_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |           |  |                   |  |  +**|
+|              |  |           |  |                   |  |  |  +--XM_019974522_1_PREDICTED_Bos_indicus_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|              |  |           |  |                   |  +**|
+|              |  |           |  |                   |     +**XM_005890667_2_PREDICTED_Bos_mutus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |           |  |                +--|
+|              |  |           |  |                |  +--XM_006068006_2_PREDICTED_Bubalus_bubalis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X2_mRNA_1
+|              |  |           |  |             +--|
+|              |  |           |  |             |  |     +**XM_012096129_4_PREDICTED_Ovis_aries_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X2_mRNA_1
+|              |  |           |  |             |  |  +--|
+|              |  |           |  |             |  |  |  +--XM_005690025_2_PREDICTED_Capra_hircus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |           |  |             |  +--|
+|              |  |           |  |             |     +--XM_040258919_1_PREDICTED_Oryx_dammah_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |           |  |     +-------|
+|              |  |           |  |     |       +--XM_020903256_1_PREDICTED_Odocoileus_virginianus_texanus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |           |  +-----|
+|              |  |           |        |                  +**XM_024764694_1_PREDICTED_Neophocaena_asiaeorientalis_asiaeorientalis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |           |        |               +--|
+|              |  |           |        |               |  +--XM_032641481_1_PREDICTED_Phocoena_sinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |           |        |            +**|
+|              |  |           |        |            |  |  +--XM_029207934_1_PREDICTED_Monodon_monoceros_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |           |        |            |  +--|
+|              |  |           |        |            |     +--XM_022583733_1_PREDICTED_Delphinapterus_leucas_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|              |  |           |        |         +**|
+|              |  |           |        |         |  +--XM_007461679_1_PREDICTED_Lipotes_vexillifer_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |           |        |      +--|
+|              |  |           |        |      |  +--XM_027115138_1_PREDICTED_Lagenorhynchus_obliquidens_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_4
+|              |  |           |        |   +--|
+|              |  |           |        |   |  +--XM_028501134_1_PREDICTED_Physeter_catodon_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |           |        +---|
+|              |  |           |            |  +--XM_007180991_1_PREDICTED_Balaenoptera_acutorostrata_scammoni_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |           |            +--|
+|              |  |           |               +--XM_036862552_1_PREDICTED_Balaenoptera_musculus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |        +--|
+|              |  |        |  |     +--XM_031681074_1_PREDICTED_Vicugna_pacos_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|              |  |        |  |  +--|
+|              |  |        |  |  |  |  +**XM_006195083_3_PREDICTED_Camelus_ferus_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|              |  |        |  |  |  +--|
+|              |  |        |  |  |     +--XM_031459858_1_PREDICTED_Camelus_dromedarius_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|              |  |        |  +--|
+|              |  |        |     +**XM_010964743_1_PREDICTED_Camelus_bactrianus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |     +--|
+|              |  |     |  |                               +----XM_013147262_2_PREDICTED_Cavia_porcellus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1
+|              |  |     |  |                     +---------|
+|              |  |     |  |                     |         |     +--XM_005401751_2_PREDICTED_Chinchilla_lanigera_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1
+|              |  |     |  |                     |         |  +--|
+|              |  |     |  |                     |         |  |  +---XM_004644113_2_PREDICTED_Octodon_degus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1
+|              |  |     |  |                     |         +--|
+|              |  |     |  |                     |            |  +---XM_004851581_3_PREDICTED_Heterocephalus_glaber_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1
+|              |  |     |  |                     |            +--|
+|              |  |     |  |                     |               +-----------XM_033764060_1_PREDICTED_Fukomys_damarensis_brain_derived_neurotrophic_factor_Bdnf_mRNA_1
+|              |  |     |  |                  +--|
+|              |  |     |  |                  |  +---------XM_016206154_1_PREDICTED_Miniopterus_natalensis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |     |  |           +------|
+|              |  |     |  |           |      +-------XM_036427676_1_PREDICTED_Pipistrellus_kuhlii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |     |  |        +--|
+|              |  |     |  |        |  +**XM_008148947_2_PREDICTED_Eptesicus_fuscus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |     |  |     +--|
+|              |  |     |  |     |  +--XM_036325692_1_PREDICTED_Myotis_myotis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X2_mRNA_1
+|              |  |     |  |  +--|
+|              |  |     |  |  |  +**XM_014545223_1_PREDICTED_Myotis_brandtii_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|              |  |     |  +--|
+|              |  |     |     |  +--XM_006753948_2_PREDICTED_Myotis_davidii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |     |     +**|
+|              |  |     |        +--XM_023756374_1_PREDICTED_Myotis_lucifugus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |  +--|
+|              |  |  |  |      +--XM_036879079_1_PREDICTED_Manis_pentadactyla_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  |  |  +------|
+|              |  |  |         +--XM_017667612_2_PREDICTED_Manis_javanica_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |  +--|
+|              |     |          +**XM_038429434_1_PREDICTED_Canis_lupus_familiaris_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_2
+|              |     |     +----|
+|              |     |     |    |  +**XM_041730708_1_PREDICTED_Vulpes_lagopus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |     |     |    +--|
+|              |     |     |       +**XM_026018600_1_PREDICTED_Vulpes_vulpes_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |     |  +--|
+|              |     |  |  |  +--XM_004682964_2_PREDICTED_Condylura_cristata_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |     |  |  +--|
+|              |     |  |     +--XM_037522538_1_PREDICTED_Talpa_occidentalis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |     +**|
+|              |        |       +**NM_001081787_1_Equus_caballus_brain_derived_neurotrophic_factor_BDNF_mRNA_2
+|              |        |    +--|
+|              |        |    |  +--XM_014831462_1_PREDICTED_Equus_asinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|              |        +----|
+|              |             +--XM_004418542_2_PREDICTED_Ceratotherium_simum_simum_brain_derived_neurotrophic_factor_LOC101398458_transcript_variant_X1_mRNA_1
+|           +**|
+|           |  |                 +------XM_007653166_4_PREDICTED_Cricetulus_griseus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1
+|           |  |              +--|
+|           |  |              |  +--XM_037204438_1_PREDICTED_Peromyscus_leucopus_brain_derived_neurotrophic_factor_Bdnf_mRNA_1
+|           |  |           +--|
+|           |  |           |  +---XM_031371313_1_PREDICTED_Mastomys_coucha_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1
+|           |  |        +--|
+|           |  |        |  +-------XM_029555090_1_PREDICTED_Nannospalax_galili_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1
+|           |  |     +--|
+|           |  |     |  +-----------XM_004660846_2_PREDICTED_Jaculus_jaculus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1
+|           |  |  +--|
+|           |  |  |  |  +----XM_013019592_1_PREDICTED_Dipodomys_ordii_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1
+|           |  |  |  +--|
+|           |  |  |     +--XM_020177315_1_PREDICTED_Castor_canadensis_brain_derived_neurotrophic_factor_Bdnf_mRNA_1
+|           |  +--|
+|           |     +--------XM_008050727_1_PREDICTED_Carlito_syrichta_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X2_mRNA_1
+|       +---|
+|       |   +--------XM_014591303_2_PREDICTED_Tupaia_chinensis_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|  +----|
+|  |    |                       +------XM_007497196_2_PREDICTED_Monodelphis_domestica_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|  |    |                    +--|
+|  |    |                    |  |     +------XM_020977976_1_PREDICTED_Phascolarctos_cinereus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|  |    |                    |  |  +--|
+|  |    |                    |  |  |  +--XM_027852578_1_PREDICTED_Vombatus_ursinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|  |    |                    |  +--|
+|  |    |                    |     +--XM_036763631_1_PREDICTED_Trichosurus_vulpecula_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|  |    |            +-------|
+|  |    |            |       +------XM_031944159_1_PREDICTED_Sarcophilus_harrisii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|  |    +------------|
+|  |                 |                        +--XM_029059317_2_PREDICTED_Ornithorhynchus_anatinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|  |                 +------------------------|
+|  |                                          +--XM_038764545_1_PREDICTED_Tachyglossus_aculeatus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
++--|
+|  +-----XM_023230347_2_PREDICTED_Piliocolobus_tephrosceles_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+|
+|     +--NM_001012441_1_Pan_troglodytes_brain_derived_neurotrophic_factor_BDNF_mRNA_1
+|  +--|
+|  |  +--XM_034932318_1_PREDICTED_Pan_paniscus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X9_mRNA_1
++--|
+   +--XM_004050851_2_PREDICTED_Gorilla_gorilla_gorilla_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1
+
+Tree in newick format:
+
+(NM_001709_5_Homo_sapiens_brain_derived_neurotrophic_factor_BDNF_transcript_variant_4_mRNA_1:0.0030524436,((((((((((((((((NM_001270630_1_Rattus_norvegicus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_1_mRNA_1:0.0000029494,(((NM_001048142_1_Mus_musculus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_4_mRNA_1:0.0000010000,XM_021151236_2_PREDICTED_Mus_caroli_brain_derived_neurotrophic_factor_Bdnf_mRNA_1:0.0025444744):0.0021162941,XM_021192829_2_PREDICTED_Mus_pahari_brain_derived_neurotrophic_factor_Bdnf_mRNA_1:0.0110004695):0.0257568257,XM_032903861_1_PREDICTED_Rattus_rattus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1:0.0028741379):0.0038683623):0.2113649169,XM_008584165_1_PREDICTED_Galeopterus_variegatus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0211564334):0.0108748599,XM_020286534_1_PREDICTED_Microcebus_murinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0323662790):0.0028222632,((((XM_015114598_2_PREDICTED_Macaca_mulatta_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_3:0.0013660230,XM_008003703_2_PREDICTED_Chlorocebus_sabaeus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0041166385):0.0000022802,(((XM_011936307_1_PREDICTED_Colobus_angolensis_palliatus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0013661386,XM_033205475_1_PREDICTED_Trachypithecus_francoisi_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0027384378):0.0000023482,(XM_017858805_1_PREDICTED_Rhinopithecus_bieti_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0013655117,XM_010374529_2_PREDICTED_Rhinopithecus_roxellana_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0000022652):0.0027369294):0.0027411411,XM_017948537_3_PREDICTED_Papio_anubis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_2:0.0027377111):0.0000022266):0.0012108617,(XM_012031697_1_PREDICTED_Cercocebus_atys_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0013743879,XM_011964715_1_PREDICTED_Mandrillus_leucophaeus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0027466166):0.0015243442):0.0040832262,((XM_002821931_2_PREDICTED_Pongo_abelii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0097435690,(XM_003254347_2_PREDICTED_Nomascus_leucogenys_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0013715461,XM_032166370_1_PREDICTED_Hylobates_moloch_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0013662402):0.0027577084):0.0043198241,((XM_003919940_3_PREDICTED_Saimiri_boliviensis_boliviensis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0216683586,(XM_032283691_1_PREDICTED_Sapajus_apella_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0027247494,XM_017538722_1_PREDICTED_Cebus_imitator_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0013583706):0.0014459540):0.0014588759,XM_012452238_1_PREDICTED_Aotus_nancymaae_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0094929699):0.0054445221):0.0031330394):0.0271988104):0.0064736413,(XM_037839114_1_PREDICTED_Choloepus_didactylus_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0243634871,XM_012523604_2_PREDICTED_Dasypus_novemcinctus_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0591430200):0.0225226189):0.0066107940,((((XM_040980297_1_PREDICTED_Ochotona_curzoniae_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0137972419,XM_004585440_1_PREDICTED_Ochotona_princeps_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0006606535):0.1501681747,XM_006883713_1_PREDICTED_Elephantulus_edwardii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0315045732):0.0214264175,(XM_004708253_2_PREDICTED_Echinops_telfairi_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.1655995571,XM_006864851_1_PREDICTED_Chrysochloris_asiatica_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0527571335):0.0123334055):0.0140970219,(XM_007951952_1_PREDICTED_Orycteropus_afer_afer_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0704161309,XM_004369733_1_PREDICTED_Trichechus_manatus_latirostris_brain_derived_neurotrophic_factor_LOC101350169_transcript_variant_X1_mRNA_1:0.0189997037):0.0117155947):0.0035091531):0.0088654961,(((XM_011362565_2_PREDICTED_Pteropus_vampyrus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0000010000,XM_039866065_1_PREDICTED_Pteropus_giganteus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0064303840):0.0020985028,XM_006907988_2_PREDICTED_Pteropus_alecto_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0035838159):0.0279161825,(((XM_037040421_1_PREDICTED_Sturnira_hondurensis_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0522986004,XM_037146035_1_PREDICTED_Artibeus_jamaicensis_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0319863115):0.0063251322,XM_024558903_1_PREDICTED_Desmodus_rotundus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0152450324):0.0000025512,XM_028517638_2_PREDICTED_Phyllostomus_discolor_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0104452540):0.0504853690):0.0140800689):0.0000024897,(((((NM_001009828_1_Felis_catus_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0185757501,XM_030333208_1_PREDICTED_Lynx_canadensis_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0031327852):0.0050085605,XM_015544869_1_PREDICTED_Panthera_tigris_altaica_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0085374389):0.0160164557,XM_029957152_1_PREDICTED_Suricata_suricatta_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0216074380):0.0026611639,XM_039217098_1_PREDICTED_Hyaena_hyaena_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0191470099):0.0136067580,XM_016194241_1_PREDICTED_Erinaceus_europaeus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.1863364837):0.0101843004):0.1601625581,((((XM_004408653_1_PREDICTED_Odobenus_rosmarus_divergens_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0029616381,((XM_021685880_1_PREDICTED_Neomonachus_schauinslandi_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0000010000,XM_031025064_1_PREDICTED_Leptonychotes_weddellii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0035394196):0.0035351522,((XM_036109493_1_PREDICTED_Halichoerus_grypus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0000023543,XM_032414183_1_PREDICTED_Phoca_vitulina_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X6_mRNA_1:0.0066451924):0.0064064419,XM_035012477_1_PREDICTED_Mirounga_leonina_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0184204126):0.0000026207):0.0355908098):0.0076850381,XM_025879326_1_PREDICTED_Callorhinus_ursinus_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0072799816):0.0065829710,XM_028117708_1_PREDICTED_Eumetopias_jubatus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0000010000):0.0000022468,XM_027577807_1_PREDICTED_Zalophus_californianus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0035487226):0.0802938313):0.1159236235,((XM_011226480_3_PREDICTED_Ailuropoda_melanoleuca_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0068570571,XM_026512203_1_PREDICTED_Ursus_arctos_horribilis_brain_derived_neurotrophic_factor_BDNF_mRNA_2:0.0121341441):0.0330421798,((XM_009007854_3_PREDICTED_Callithrix_jacchus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0562694776,((XM_033118944_1_PREDICTED_Rhinolophus_ferrumequinum_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0201041838,XM_019650718_1_PREDICTED_Hipposideros_armiger_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0817181584):0.0030246271,XM_036258707_1_PREDICTED_Molossus_molossus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0381126153):0.0073279871):0.0161443446,(XM_015476449_1_PREDICTED_Marmota_marmota_marmota_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1:0.0000027321,((XM_040284582_1_PREDICTED_Ictidomys_tridecemlineatus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1:0.0151751189,XM_026412272_1_PREDICTED_Urocitellus_parryii_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1:0.0122863764):0.0271990955,XM_027936596_1_PREDICTED_Marmota_flaviventris_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1:0.0118617571):0.1074383092):0.0618619189):0.0032388801):0.0236041530):0.0278925770,(XM_012649556_1_PREDICTED_Propithecus_coquereli_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0230474469,XM_012814047_1_PREDICTED_Otolemur_garnettii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0397561798):0.0228014991):0.0254284792,(((((XM_005654684_3_PREDICTED_Sus_scrofa_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0525224243,(((((XM_005216334_4_PREDICTED_Bos_taurus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_2:0.0032979007,((XM_010831788_1_PREDICTED_Bison_bison_bison_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0000010000,XM_019974522_1_PREDICTED_Bos_indicus_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0127378892):0.0000021539,XM_005890667_2_PREDICTED_Bos_mutus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0000010000):0.0000020582):0.0061608523,XM_006068006_2_PREDICTED_Bubalus_bubalis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X2_mRNA_1:0.0068209763):0.0084125762,((XM_012096129_4_PREDICTED_Ovis_aries_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X2_mRNA_1:0.0000010000,XM_005690025_2_PREDICTED_Capra_hircus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0099497614):0.0032662151,XM_040258919_1_PREDICTED_Oryx_dammah_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0102497333):0.0054810525):0.0221407850,XM_020903256_1_PREDICTED_Odocoileus_virginianus_texanus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0583492556):0.1272927781,((((((XM_024764694_1_PREDICTED_Neophocaena_asiaeorientalis_asiaeorientalis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0000024106,XM_032641481_1_PREDICTED_Phocoena_sinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0071084425):0.0069962266,(XM_029207934_1_PREDICTED_Monodon_monoceros_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0587088680,XM_022583733_1_PREDICTED_Delphinapterus_leucas_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0601825782):0.0039059889):0.0000028043,XM_007461679_1_PREDICTED_Lipotes_vexillifer_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0102907894):0.0000025122,XM_027115138_1_PREDICTED_Lagenorhynchus_obliquidens_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_4:0.0068233802):0.0065399508,XM_028501134_1_PREDICTED_Physeter_catodon_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0450275050):0.0021283855,(XM_007180991_1_PREDICTED_Balaenoptera_acutorostrata_scammoni_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0095407221,XM_036862552_1_PREDICTED_Balaenoptera_musculus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0012571255):0.0152928647):0.0645586839):0.0950746739):0.0433302721,((XM_031681074_1_PREDICTED_Vicugna_pacos_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0099254932,(XM_006195083_3_PREDICTED_Camelus_ferus_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0000010000,XM_031459858_1_PREDICTED_Camelus_dromedarius_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0021684848):0.0032948856):0.0019643468,XM_010964743_1_PREDICTED_Camelus_bactrianus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0000020517):0.0421442233):0.0185759966,(((((((XM_013147262_2_PREDICTED_Cavia_porcellus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1:0.0821058122,((XM_005401751_2_PREDICTED_Chinchilla_lanigera_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1:0.0579859227,XM_004644113_2_PREDICTED_Octodon_degus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1:0.0696465696):0.0382048765,(XM_004851581_3_PREDICTED_Heterocephalus_glaber_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1:0.0745371196,XM_033764060_1_PREDICTED_Fukomys_damarensis_brain_derived_neurotrophic_factor_Bdnf_mRNA_1:0.2050984160):0.0326984927):0.0261305559):0.1646135641,XM_016206154_1_PREDICTED_Miniopterus_natalensis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.1635339754):0.0596460586,XM_036427676_1_PREDICTED_Pipistrellus_kuhlii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.1308284718):0.1110502996,XM_008148947_2_PREDICTED_Eptesicus_fuscus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0000020263):0.0538586132,XM_036325692_1_PREDICTED_Myotis_myotis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X2_mRNA_1:0.0063510377):0.0222026517,XM_014545223_1_PREDICTED_Myotis_brandtii_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0000029723):0.0022899435,(XM_006753948_2_PREDICTED_Myotis_davidii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0248559902,XM_023756374_1_PREDICTED_Myotis_lucifugus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0034673358):0.0000025508):0.0496367965):0.0071853075,(XM_036879079_1_PREDICTED_Manis_pentadactyla_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0138186859,XM_017667612_2_PREDICTED_Manis_javanica_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0112594921):0.1170048098):0.0048036564,(((XM_038429434_1_PREDICTED_Canis_lupus_familiaris_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_2:0.0000021456,(XM_041730708_1_PREDICTED_Vulpes_lagopus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0000024699,XM_026018600_1_PREDICTED_Vulpes_vulpes_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0000010000):0.0034741484):0.0873219998,(XM_004682964_2_PREDICTED_Condylura_cristata_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0549777670,XM_037522538_1_PREDICTED_Talpa_occidentalis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0308338628):0.0467634010):0.0135693244,((NM_001081787_1_Equus_caballus_brain_derived_neurotrophic_factor_BDNF_mRNA_2:0.0000021961,XM_014831462_1_PREDICTED_Equus_asinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0035529790):0.0630212158,XM_004418542_2_PREDICTED_Ceratotherium_simum_simum_brain_derived_neurotrophic_factor_LOC101398458_transcript_variant_X1_mRNA_1:0.0298149107):0.0818049123):0.0000022787):0.0098996230):0.0076144752,((((((XM_007653166_4_PREDICTED_Cricetulus_griseus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1:0.1222114924,XM_037204438_1_PREDICTED_Peromyscus_leucopus_brain_derived_neurotrophic_factor_Bdnf_mRNA_1:0.0178121135):0.0301489725,XM_031371313_1_PREDICTED_Mastomys_coucha_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1:0.0687242490):0.0189320910,XM_029555090_1_PREDICTED_Nannospalax_galili_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1:0.1355558085):0.0178603175,XM_004660846_2_PREDICTED_Jaculus_jaculus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1:0.2019961851):0.0270621502,(XM_013019592_1_PREDICTED_Dipodomys_ordii_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1:0.0833020662,XM_020177315_1_PREDICTED_Castor_canadensis_brain_derived_neurotrophic_factor_Bdnf_mRNA_1:0.0434792081):0.0039068845):0.0070670396,XM_008050727_1_PREDICTED_Carlito_syrichta_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X2_mRNA_1:0.1569946125):0.0049114217):0.0000020362,XM_014591303_2_PREDICTED_Tupaia_chinensis_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.1550005647):0.0654420605,(((XM_007497196_2_PREDICTED_Monodelphis_domestica_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.1180564137,((XM_020977976_1_PREDICTED_Phascolarctos_cinereus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.1233800781,XM_027852578_1_PREDICTED_Vombatus_ursinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0384783137):0.0271408120,XM_036763631_1_PREDICTED_Trichosurus_vulpecula_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0623043603):0.0312846883):0.0086859971,XM_031944159_1_PREDICTED_Sarcophilus_harrisii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.1142217121):0.1303708789,(XM_029059317_2_PREDICTED_Ornithorhynchus_anatinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0607649833,XM_038764545_1_PREDICTED_Tachyglossus_aculeatus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0189257980):0.4093161714):0.2154653929):0.0939229281,XM_023230347_2_PREDICTED_Piliocolobus_tephrosceles_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.1030515747):0.0337093715,((NM_001012441_1_Pan_troglodytes_brain_derived_neurotrophic_factor_BDNF_mRNA_1:0.0037475225,XM_034932318_1_PREDICTED_Pan_paniscus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X9_mRNA_1:0.0017368233):0.0017337521,XM_004050851_2_PREDICTED_Gorilla_gorilla_gorilla_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1:0.0031212149):0.0094432288);
+
+TIME STAMP
+----------
+
+Date and time: Wed Aug 18 12:45:16 2021
+Total CPU time used: 385.164 seconds (0h:6m:25s)
+Total wall-clock time used: 388.908 seconds (0h:6m:28s)
+

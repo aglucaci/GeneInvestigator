@@ -1,0 +1,360 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Linux 64-bit built Mar 30 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    n7 (AVX2, FMA3, 125 GB RAM)
+Command: iqtree -s /home/aglucaci/GeneInvestigator/results/BDNF/BDNF_codons.fasta
+Seed:    334846 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Aug 18 12:37:15 2021
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file /home/aglucaci/GeneInvestigator/results/BDNF/BDNF_codons.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 132 sequences with 1347 columns, 710 distinct patterns
+530 parsimony-informative, 119 singleton sites, 698 constant sites
+                                                                                                                                          Gap/Ambiguity  Composition  p-value
+   1  NM_001709_5_Homo_sapiens_brain_derived_neurotrophic_factor_BDNF_transcript_variant_4_mRNA_1                                                44.99%    passed     34.13%
+   2  NM_001270630_1_Rattus_norvegicus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_1_mRNA_1                                        19.38%    failed      4.28%
+   3  NM_001048142_1_Mus_musculus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_4_mRNA_1                                             44.54%    passed     86.24%
+   4  XM_015114598_2_PREDICTED_Macaca_mulatta_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_3                                32.29%    passed     92.24%
+   5  XM_005654684_3_PREDICTED_Sus_scrofa_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                                    42.09%    passed     96.00%
+   6  NM_001009828_1_Felis_catus_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                                   44.99%    passed     97.49%
+   7  XM_005216334_4_PREDICTED_Bos_taurus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_2                                    42.54%    passed     72.46%
+   8  XM_038429434_1_PREDICTED_Canis_lupus_familiaris_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_2                        43.21%    passed     92.18%
+   9  XM_007653166_4_PREDICTED_Cricetulus_griseus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1                            38.75%    passed     80.34%
+  10  NM_001012441_1_Pan_troglodytes_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                               44.99%    passed     46.91%
+  11  XM_011226480_3_PREDICTED_Ailuropoda_melanoleuca_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                              28.58%    passed     62.29%
+  12  XM_007497196_2_PREDICTED_Monodelphis_domestica_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                         39.42%    passed     10.32%
+  13  NM_001081787_1_Equus_caballus_brain_derived_neurotrophic_factor_BDNF_mRNA_2                                                                44.99%    passed     76.07%
+  14  XM_012096129_4_PREDICTED_Ovis_aries_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X2_mRNA_1                                    44.32%    passed     54.43%
+  15  XM_029555090_1_PREDICTED_Nannospalax_galili_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1                            39.05%    passed     81.78%
+  16  XM_009007854_3_PREDICTED_Callithrix_jacchus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                            26.95%    passed     14.23%
+  17  XM_031944159_1_PREDICTED_Sarcophilus_harrisii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                          43.43%    passed     99.93%
+  18  XM_020977976_1_PREDICTED_Phascolarctos_cinereus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                        38.98%    passed     26.90%
+  19  XM_036763631_1_PREDICTED_Trichosurus_vulpecula_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                               45.21%    passed     38.89%
+  20  XM_027852578_1_PREDICTED_Vombatus_ursinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                              45.21%    passed     32.12%
+  21  XM_040980297_1_PREDICTED_Ochotona_curzoniae_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                            43.21%    passed     35.44%
+  22  XM_004585440_1_PREDICTED_Ochotona_princeps_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                             43.21%    passed     22.94%
+  23  XM_013019592_1_PREDICTED_Dipodomys_ordii_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1                               27.39%    passed     58.56%
+  24  XM_020177315_1_PREDICTED_Castor_canadensis_brain_derived_neurotrophic_factor_Bdnf_mRNA_1                                                   27.69%    passed     33.34%
+  25  XM_021151236_2_PREDICTED_Mus_caroli_brain_derived_neurotrophic_factor_Bdnf_mRNA_1                                                          19.45%    passed     18.58%
+  26  XM_021192829_2_PREDICTED_Mus_pahari_brain_derived_neurotrophic_factor_Bdnf_mRNA_1                                                          19.45%    passed     41.54%
+  27  XM_004660846_2_PREDICTED_Jaculus_jaculus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1                               43.21%    passed     85.56%
+  28  XM_032903861_1_PREDICTED_Rattus_rattus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1                                 19.38%    passed      5.85%
+  29  XM_031371313_1_PREDICTED_Mastomys_coucha_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1                               26.73%    passed     22.68%
+  30  XM_037204438_1_PREDICTED_Peromyscus_leucopus_brain_derived_neurotrophic_factor_Bdnf_mRNA_1                                                 27.62%    passed     24.61%
+  31  XM_013147262_2_PREDICTED_Cavia_porcellus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1                               41.43%    failed      0.72%
+  32  XM_005401751_2_PREDICTED_Chinchilla_lanigera_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1                           42.76%    failed      3.83%
+  33  XM_004644113_2_PREDICTED_Octodon_degus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1                                 42.76%    failed      4.65%
+  34  XM_004851581_3_PREDICTED_Heterocephalus_glaber_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1                         41.87%    failed      3.09%
+  35  XM_033764060_1_PREDICTED_Fukomys_damarensis_brain_derived_neurotrophic_factor_Bdnf_mRNA_1                                                  45.81%    failed      0.00%
+  36  XM_015476449_1_PREDICTED_Marmota_marmota_marmota_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1                       27.84%    passed     22.22%
+  37  XM_040284582_1_PREDICTED_Ictidomys_tridecemlineatus_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1                    42.32%    passed     77.12%
+  38  XM_026412272_1_PREDICTED_Urocitellus_parryii_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1                           38.60%    passed     77.67%
+  39  XM_027936596_1_PREDICTED_Marmota_flaviventris_brain_derived_neurotrophic_factor_Bdnf_transcript_variant_X1_mRNA_1                          38.53%    passed     68.07%
+  40  XM_015544869_1_PREDICTED_Panthera_tigris_altaica_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                             44.99%    passed     87.11%
+  41  XM_030333208_1_PREDICTED_Lynx_canadensis_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                     18.78%    failed      0.05%
+  42  XM_026512203_1_PREDICTED_Ursus_arctos_horribilis_brain_derived_neurotrophic_factor_BDNF_mRNA_2                                             44.99%    passed     96.36%
+  43  XM_004408653_1_PREDICTED_Odobenus_rosmarus_divergens_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                   43.21%    passed     78.54%
+  44  XM_039217098_1_PREDICTED_Hyaena_hyaena_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                       44.99%    passed     60.00%
+  45  XM_029957152_1_PREDICTED_Suricata_suricatta_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                            43.21%    passed     89.80%
+  46  XM_041730708_1_PREDICTED_Vulpes_lagopus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                                44.99%    passed     89.12%
+  47  XM_026018600_1_PREDICTED_Vulpes_vulpes_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                                 43.21%    passed     89.51%
+  48  XM_025879326_1_PREDICTED_Callorhinus_ursinus_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                 44.99%    passed     77.91%
+  49  XM_028117708_1_PREDICTED_Eumetopias_jubatus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                            44.99%    passed     74.42%
+  50  XM_027577807_1_PREDICTED_Zalophus_californianus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                        43.21%    passed     66.29%
+  51  XM_021685880_1_PREDICTED_Neomonachus_schauinslandi_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                     44.99%    passed     81.66%
+  52  XM_036109493_1_PREDICTED_Halichoerus_grypus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                            43.21%    passed     72.91%
+  53  XM_031025064_1_PREDICTED_Leptonychotes_weddellii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                       43.21%    passed     71.18%
+  54  XM_035012477_1_PREDICTED_Mirounga_leonina_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                    44.99%    passed     94.46%
+  55  XM_032414183_1_PREDICTED_Phoca_vitulina_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X6_mRNA_1                                27.84%    passed     27.36%
+  56  XM_020903256_1_PREDICTED_Odocoileus_virginianus_texanus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                42.54%    passed     40.29%
+  57  XM_010831788_1_PREDICTED_Bison_bison_bison_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                             44.32%    passed     62.09%
+  58  XM_005890667_2_PREDICTED_Bos_mutus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                                     42.54%    passed     70.52%
+  59  XM_019974522_1_PREDICTED_Bos_indicus_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                         25.84%    passed     30.08%
+  60  XM_006068006_2_PREDICTED_Bubalus_bubalis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X2_mRNA_1                               44.32%    passed     74.42%
+  61  XM_040258919_1_PREDICTED_Oryx_dammah_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                                   44.32%    passed     49.15%
+  62  XM_005690025_2_PREDICTED_Capra_hircus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                                  42.54%    passed     68.17%
+  63  XM_031681074_1_PREDICTED_Vicugna_pacos_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                       27.02%    passed     62.48%
+  64  XM_006195083_3_PREDICTED_Camelus_ferus_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                       27.02%    passed     62.78%
+  65  XM_010964743_1_PREDICTED_Camelus_bactrianus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                            43.21%    passed     40.99%
+  66  XM_031459858_1_PREDICTED_Camelus_dromedarius_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                 27.02%    passed     68.41%
+  67  XM_024764694_1_PREDICTED_Neophocaena_asiaeorientalis_asiaeorientalis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1   44.77%    passed     65.56%
+  68  XM_007180991_1_PREDICTED_Balaenoptera_acutorostrata_scammoni_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1           42.98%    passed     77.56%
+  69  XM_007461679_1_PREDICTED_Lipotes_vexillifer_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                            42.98%    passed     86.38%
+  70  XM_027115138_1_PREDICTED_Lagenorhynchus_obliquidens_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_4                    42.98%    passed     73.22%
+  71  XM_032641481_1_PREDICTED_Phocoena_sinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                                46.33%    passed     50.50%
+  72  XM_029207934_1_PREDICTED_Monodon_monoceros_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                             38.31%    passed     80.68%
+  73  XM_022583733_1_PREDICTED_Delphinapterus_leucas_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                               27.10%    passed     90.50%
+  74  XM_028501134_1_PREDICTED_Physeter_catodon_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                              45.43%    passed     73.84%
+  75  XM_036862552_1_PREDICTED_Balaenoptera_musculus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                         42.98%    passed     75.77%
+  76  XM_016194241_1_PREDICTED_Erinaceus_europaeus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                           45.21%    passed     51.82%
+  77  XM_004682964_2_PREDICTED_Condylura_cristata_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                            43.43%    passed     98.52%
+  78  XM_037522538_1_PREDICTED_Talpa_occidentalis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                            43.43%    passed     94.19%
+  79  XM_011362565_2_PREDICTED_Pteropus_vampyrus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                             43.21%    passed     95.78%
+  80  XM_039866065_1_PREDICTED_Pteropus_giganteus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                            32.96%    passed     78.07%
+  81  XM_006907988_2_PREDICTED_Pteropus_alecto_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                               43.21%    passed     93.04%
+  82  XM_033118944_1_PREDICTED_Rhinolophus_ferrumequinum_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                           26.95%    passed      6.45%
+  83  XM_037040421_1_PREDICTED_Sturnira_hondurensis_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                44.99%    passed     88.30%
+  84  XM_037146035_1_PREDICTED_Artibeus_jamaicensis_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                44.99%    passed     93.89%
+  85  XM_024558903_1_PREDICTED_Desmodus_rotundus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                             43.21%    passed     75.86%
+  86  XM_028517638_2_PREDICTED_Phyllostomus_discolor_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                         44.99%    passed     84.00%
+  87  XM_016206154_1_PREDICTED_Miniopterus_natalensis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                        41.87%    failed      3.05%
+  88  XM_019650718_1_PREDICTED_Hipposideros_armiger_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                          41.65%    passed     87.92%
+  89  XM_036427676_1_PREDICTED_Pipistrellus_kuhlii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                           30.51%    passed     41.48%
+  90  XM_008148947_2_PREDICTED_Eptesicus_fuscus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                              42.54%    passed     30.43%
+  91  XM_014545223_1_PREDICTED_Myotis_brandtii_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                     27.25%    passed     65.57%
+  92  XM_006753948_2_PREDICTED_Myotis_davidii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                                43.21%    passed     76.80%
+  93  XM_036325692_1_PREDICTED_Myotis_myotis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X2_mRNA_1                                 42.54%    passed     79.21%
+  94  XM_023756374_1_PREDICTED_Myotis_lucifugus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                              43.21%    passed     80.55%
+  95  XM_036258707_1_PREDICTED_Molossus_molossus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                             27.17%    passed     57.16%
+  96  XM_014831462_1_PREDICTED_Equus_asinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                                  44.99%    passed     72.91%
+  97  XM_036879079_1_PREDICTED_Manis_pentadactyla_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                            43.21%    passed     91.30%
+  98  XM_017667612_2_PREDICTED_Manis_javanica_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                                43.21%    passed     86.22%
+  99  XM_008584165_1_PREDICTED_Galeopterus_variegatus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                        32.29%    passed     92.89%
+ 100  XM_014591303_2_PREDICTED_Tupaia_chinensis_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                    44.99%    passed     91.40%
+ 101  XM_011936307_1_PREDICTED_Colobus_angolensis_palliatus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                  32.29%    passed     93.84%
+ 102  XM_008003703_2_PREDICTED_Chlorocebus_sabaeus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                           32.29%    passed     92.05%
+ 103  XM_012031697_1_PREDICTED_Cercocebus_atys_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                               32.29%    passed     90.02%
+ 104  XM_017948537_3_PREDICTED_Papio_anubis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_2                                  32.29%    passed     92.32%
+ 105  XM_011964715_1_PREDICTED_Mandrillus_leucophaeus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                        32.29%    passed     90.83%
+ 106  XM_033205475_1_PREDICTED_Trachypithecus_francoisi_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                      32.29%    passed     89.56%
+ 107  XM_017858805_1_PREDICTED_Rhinopithecus_bieti_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                           32.29%    passed     92.30%
+ 108  XM_010374529_2_PREDICTED_Rhinopithecus_roxellana_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                       32.29%    passed     93.25%
+ 109  XM_023230347_2_PREDICTED_Piliocolobus_tephrosceles_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                     38.53%    passed     47.74%
+ 110  XM_004050851_2_PREDICTED_Gorilla_gorilla_gorilla_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                       26.73%    passed      6.43%
+ 111  XM_034932318_1_PREDICTED_Pan_paniscus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X9_mRNA_1                                  26.73%    passed     10.27%
+ 112  XM_002821931_2_PREDICTED_Pongo_abelii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                                  32.29%    passed     90.65%
+ 113  XM_003254347_2_PREDICTED_Nomascus_leucogenys_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                           32.29%    passed     92.08%
+ 114  XM_032166370_1_PREDICTED_Hylobates_moloch_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                              32.29%    passed     90.14%
+ 115  XM_003919940_3_PREDICTED_Saimiri_boliviensis_boliviensis_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1               42.98%    passed     60.68%
+ 116  XM_032283691_1_PREDICTED_Sapajus_apella_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                                32.07%    passed     92.86%
+ 117  XM_017538722_1_PREDICTED_Cebus_imitator_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                                32.07%    passed     90.51%
+ 118  XM_012452238_1_PREDICTED_Aotus_nancymaae_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                               32.07%    passed     89.83%
+ 119  XM_008050727_1_PREDICTED_Carlito_syrichta_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X2_mRNA_1                              44.99%    passed     99.41%
+ 120  XM_012649556_1_PREDICTED_Propithecus_coquereli_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                         26.95%    passed     26.09%
+ 121  XM_020286534_1_PREDICTED_Microcebus_murinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                            32.07%    passed     76.88%
+ 122  XM_012814047_1_PREDICTED_Otolemur_garnettii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                            26.73%    passed     11.92%
+ 123  XM_007951952_1_PREDICTED_Orycteropus_afer_afer_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                         43.21%    passed     40.89%
+ 124  XM_006883713_1_PREDICTED_Elephantulus_edwardii_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                         43.21%    passed     51.39%
+ 125  XM_004708253_2_PREDICTED_Echinops_telfairi_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                             42.98%    passed     95.23%
+ 126  XM_006864851_1_PREDICTED_Chrysochloris_asiatica_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                        43.21%    passed     20.99%
+ 127  XM_037839114_1_PREDICTED_Choloepus_didactylus_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                19.82%    passed      7.54%
+ 128  XM_012523604_2_PREDICTED_Dasypus_novemcinctus_brain_derived_neurotrophic_factor_BDNF_mRNA_1                                                44.99%    passed     65.56%
+ 129  XM_029059317_2_PREDICTED_Ornithorhynchus_anatinus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                      43.43%    passed     97.14%
+ 130  XM_038764545_1_PREDICTED_Tachyglossus_aculeatus_brain_derived_neurotrophic_factor_BDNF_transcript_variant_X1_mRNA_1                        43.43%    passed     85.03%
+ 131  XM_004418542_2_PREDICTED_Ceratotherium_simum_simum_brain_derived_neurotrophic_factor_LOC101398458_transcript_variant_X1_mRNA_1             43.21%    passed     92.50%
+ 132  XM_004369733_1_PREDICTED_Trichechus_manatus_latirostris_brain_derived_neurotrophic_factor_LOC101350169_transcript_variant_X1_mRNA_1        43.21%    passed     32.90%
+****  TOTAL                                                                                                                                      38.16%  8 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.028 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -16492.298
+2. Current log-likelihood: -16489.794
+3. Current log-likelihood: -16488.303
+4. Current log-likelihood: -16487.014
+5. Current log-likelihood: -16485.977
+Optimal log-likelihood: -16484.776
+Rate parameters:  A-C: 1.19463  A-G: 2.58778  A-T: 0.48748  C-G: 0.94933  C-T: 3.92771  G-T: 1.00000
+Base frequencies:  A: 0.259  C: 0.247  G: 0.290  T: 0.205
+Proportion of invariable sites: 0.353
+Gamma shape alpha: 0.756
+Parameters optimization took 5 rounds (0.908 sec)
+Time for fast ML tree search: 2.395 seconds
+
+NOTE: ModelFinder requires 30 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 1347) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         18962.866    269 38463.732    38598.606    39864.047
+  2  GTR+F+I       17273.081    270 35086.162    35222.166    36491.683
+  3  GTR+F+G4      16529.943    270 33599.886    33735.890    35005.408
+  4  GTR+F+I+G4    16483.692    271 33509.384    33646.522    34920.111
+  5  GTR+F+R2      16925.643    271 34393.287    34530.425    35804.014
+  6  GTR+F+R3      16675.354    273 33896.708    34036.134    35317.847
+  7  GTR+F+R4      16577.802    275 33705.603    33847.340    35137.153
+  8  GTR+F+R5      16531.411    277 33616.821    33760.892    35058.782
+  9  GTR+F+R6      16495.894    279 33549.789    33696.218    35002.161
+ 10  GTR+F+R7      16469.392    281 33500.784    33649.595    34963.567
+ 11  GTR+F+R8      16461.497    283 33488.994    33640.211    34962.188
+ 12  GTR+F+R9      16460.814    285 33491.629    33645.276    34975.235
+ 17  SYM+I+G4      16494.956    268 33525.912    33659.664    34921.023
+ 30  TVM+F+I+G4    16502.381    270 33544.763    33680.767    34950.284
+ 43  TVMe+I+G4     16496.420    267 33526.841    33659.474    34916.745
+ 56  TIM3+F+I+G4   16499.826    269 33537.651    33672.526    34937.967
+ 69  TIM3e+I+G4    16513.567    266 33559.133    33690.655    34943.832
+ 82  TIM2+F+I+G4   16508.323    269 33554.645    33689.520    34954.961
+ 95  TIM2e+I+G4    16531.995    266 33595.990    33727.512    34980.689
+108  TIM+F+I+G4    16498.223    269 33534.447    33669.321    34934.763
+121  TIMe+I+G4     16526.355    266 33584.709    33716.232    34969.408
+134  TPM3u+F+I+G4  16518.452    268 33572.904    33706.656    34968.015
+147  TPM3+F+I+G4   16518.452    268 33572.904    33706.656    34968.015
+160  TPM2u+F+I+G4  16527.885    268 33591.770    33725.522    34986.881
+173  TPM2+F+I+G4   16527.885    268 33591.770    33725.522    34986.881
+186  K3Pu+F+I+G4   16517.492    268 33570.985    33704.736    34966.095
+199  K3P+I+G4      16527.755    265 33585.510    33715.926    34965.003
+212  TN+F+I+G4     16509.844    268 33555.689    33689.440    34950.799
+225  TNe+I+G4      16536.694    265 33603.387    33733.804    34982.881
+238  HKY+F+I+G4    16529.142    267 33592.285    33724.918    34982.189
+251  K2P+I+G4      16538.122    264 33604.244    33733.560    34978.531
+264  F81+F+I+G4    16999.122    266 34530.245    34661.767    35914.943
+277  JC+I+G4       17005.738    263 34537.476    34665.698    35906.558
+Akaike Information Criterion:           GTR+F+R8
+Corrected Akaike Information Criterion: GTR+F+R8
+Bayesian Information Criterion:         TVMe+I+G4
+Best-fit model: TVMe+I+G4 chosen according to BIC
+
+All model information printed to /home/aglucaci/GeneInvestigator/results/BDNF/BDNF_codons.fasta.model.gz
+CPU time for ModelFinder: 92.159 seconds (0h:1m:32s)
+Wall-clock time for ModelFinder: 92.314 seconds (0h:1m:32s)
+
+NOTE: 12 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 0.811 / Estimate: 0.000, 0.294 / LogL: -16541.416
+Init pinv, alpha: 0.058, 0.811 / Estimate: 0.370, 0.805 / LogL: -16496.445
+Init pinv, alpha: 0.115, 0.811 / Estimate: 0.369, 0.803 / LogL: -16496.457
+Init pinv, alpha: 0.173, 0.811 / Estimate: 0.369, 0.803 / LogL: -16496.460
+Init pinv, alpha: 0.230, 0.811 / Estimate: 0.370, 0.804 / LogL: -16496.454
+Init pinv, alpha: 0.288, 0.811 / Estimate: 0.370, 0.805 / LogL: -16496.448
+Init pinv, alpha: 0.345, 0.811 / Estimate: 0.370, 0.805 / LogL: -16496.448
+Init pinv, alpha: 0.403, 0.811 / Estimate: 0.377, 0.826 / LogL: -16496.470
+Init pinv, alpha: 0.461, 0.811 / Estimate: 0.376, 0.821 / LogL: -16496.441
+Init pinv, alpha: 0.518, 0.811 / Estimate: 0.376, 0.820 / LogL: -16496.449
+Optimal pinv,alpha: 0.376, 0.821 / LogL: -16496.441
+
+Parameters optimization took 16.326 sec
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.195956 sec (of wall-clock time) 0.194989 sec(of CPU time)
+Computing RapidNJ tree took 0.001895 sec (of wall-clock time) 0.003106 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -16698.793
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 3.098 second
+Computing log-likelihood of 98 initial trees ... 2.964 seconds
+Current best score: -16434.098
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -16290.501
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -16268.648
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -16260.742
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 7: -16253.410
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 10: -16246.916
+Iteration 10 / LogL: -16246.916 / Time: 0h:0m:33s
+Iteration 20 / LogL: -16308.902 / Time: 0h:0m:41s
+Finish initializing candidate tree set (20)
+Current best tree score: -16246.916 / CPU time: 24.519
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -16285.718 / Time: 0h:0m:51s (0h:2m:20s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 32: -16246.043
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 36: -16244.100
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 38: -16241.716
+Iteration 40 / LogL: -16247.923 / Time: 0h:1m:0s (0h:2m:31s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 48: -16241.299
+Iteration 50 / LogL: -16247.618 / Time: 0h:1m:9s (0h:2m:19s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 54: -16241.039
+Iteration 60 / LogL: -16253.011 / Time: 0h:1m:18s (0h:2m:4s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 63: -16218.942
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 68: -16212.779
+Iteration 70 / LogL: -16222.281 / Time: 0h:1m:27s (0h:2m:4s left)
+Iteration 80 / LogL: -16219.084 / Time: 0h:1m:37s (0h:1m:48s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 86: -16211.253
+Iteration 90 / LogL: -16214.775 / Time: 0h:1m:46s (0h:1m:54s left)
+Iteration 100 / LogL: -16212.799 / Time: 0h:1m:56s (0h:1m:40s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 102: -16211.160
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 108: -16211.071
+Iteration 110 / LogL: -16223.286 / Time: 0h:2m:5s (0h:1m:52s left)
+Iteration 120 / LogL: -16211.240 / Time: 0h:2m:14s (0h:1m:39s left)
+Iteration 130 / LogL: -16211.252 / Time: 0h:2m:23s (0h:1m:26s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 132: -16211.032
+Iteration 140 / LogL: -16213.385 / Time: 0h:2m:33s (0h:1m:41s left)
+Iteration 150 / LogL: -16218.816 / Time: 0h:2m:43s (0h:1m:30s left)
+Iteration 160 / LogL: -16213.126 / Time: 0h:2m:52s (0h:1m:18s left)
+Iteration 170 / LogL: -16321.296 / Time: 0h:3m:1s (0h:1m:6s left)
+Iteration 180 / LogL: -16211.059 / Time: 0h:3m:10s (0h:0m:55s left)
+Iteration 190 / LogL: -16211.047 / Time: 0h:3m:19s (0h:0m:44s left)
+Iteration 200 / LogL: -16211.045 / Time: 0h:3m:28s (0h:0m:33s left)
+Iteration 210 / LogL: -16211.142 / Time: 0h:3m:38s (0h:0m:22s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 217: -16210.872
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 220: -16210.447
+Iteration 220 / LogL: -16210.447 / Time: 0h:3m:47s (0h:1m:43s left)
+Iteration 230 / LogL: -16211.146 / Time: 0h:3m:57s (0h:1m:33s left)
+Iteration 240 / LogL: -16211.132 / Time: 0h:4m:6s (0h:1m:22s left)
+Iteration 250 / LogL: -16211.776 / Time: 0h:4m:15s (0h:1m:11s left)
+Iteration 260 / LogL: -16229.853 / Time: 0h:4m:24s (0h:1m:1s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 263: -16210.232
+BETTER TREE FOUND at iteration 269: -16210.231
+Iteration 270 / LogL: -16222.259 / Time: 0h:4m:33s (0h:1m:40s left)
+Iteration 280 / LogL: -16211.763 / Time: 0h:4m:42s (0h:1m:30s left)
+Iteration 290 / LogL: -16211.095 / Time: 0h:4m:51s (0h:1m:19s left)
+BETTER TREE FOUND at iteration 297: -16210.231
+Iteration 300 / LogL: -16210.375 / Time: 0h:5m:0s (0h:1m:37s left)
+Iteration 310 / LogL: -16249.370 / Time: 0h:5m:9s (0h:1m:27s left)
+Iteration 320 / LogL: -16214.018 / Time: 0h:5m:18s (0h:1m:16s left)
+Iteration 330 / LogL: -16418.527 / Time: 0h:5m:27s (0h:1m:6s left)
+Iteration 340 / LogL: -16220.020 / Time: 0h:5m:36s (0h:0m:56s left)
+Iteration 350 / LogL: -16258.403 / Time: 0h:5m:45s (0h:0m:46s left)
+Iteration 360 / LogL: -16210.751 / Time: 0h:5m:54s (0h:0m:36s left)
+Iteration 370 / LogL: -16221.846 / Time: 0h:6m:3s (0h:0m:26s left)
+Iteration 380 / LogL: -16210.231 / Time: 0h:6m:12s (0h:0m:16s left)
+Iteration 390 / LogL: -16213.091 / Time: 0h:6m:21s (0h:0m:6s left)
+TREE SEARCH COMPLETED AFTER 398 ITERATIONS / Time: 0h:6m:28s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -16210.231
+Optimal log-likelihood: -16210.229
+Rate parameters:  A-C: 1.23548  A-G: 3.16712  A-T: 0.46668  C-G: 1.06062  C-T: 3.16712  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Proportion of invariable sites: 0.365
+Gamma shape alpha: 0.755
+Parameters optimization took 1 rounds (0.116 sec)
+BEST SCORE FOUND : -16210.229
+Total tree length: 8.385
+
+Total number of iterations: 398
+CPU time used for tree search: 368.101 sec (0h:6m:8s)
+Wall-clock time used for tree search: 371.791 sec (0h:6m:11s)
+Total CPU time used: 385.164 sec (0h:6m:25s)
+Total wall-clock time used: 388.902 sec (0h:6m:28s)
+
+Analysis results written to: 
+  IQ-TREE report:                /home/aglucaci/GeneInvestigator/results/BDNF/BDNF_codons.fasta.iqtree
+  Maximum-likelihood tree:       /home/aglucaci/GeneInvestigator/results/BDNF/BDNF_codons.fasta.treefile
+  Likelihood distances:          /home/aglucaci/GeneInvestigator/results/BDNF/BDNF_codons.fasta.mldist
+  Screen log file:               /home/aglucaci/GeneInvestigator/results/BDNF/BDNF_codons.fasta.log
+
+Date and Time: Wed Aug 18 12:45:16 2021
